@@ -267,7 +267,7 @@ body
 {
     margin: 6px;
     background-color: aqua;
-    height: 50px;
+    height: 40px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -276,7 +276,7 @@ body
 #filter_bar_title
 {
     height: 100%;
-    width: 5%;
+    width: 50px;
     display: flex;
     align-items: center;
 }
@@ -285,66 +285,29 @@ body
 {
     background-color: plum;
     height: 100%;
-    width: 66%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#filter_bar_title
-{
-    margin-right: 15px;
-    /* font-size: 55%; */
-}
-
-/*
-.bouton_filtre
-{
-    height: 100%;
-    background-color: green;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    
 }
-.icon_bouton_filtre
+
+.bouton_filtre_a
 {
-    height: 18px;
-    width: 18px;
-    padding: 5.5px;
-    border-radius: 20px;
-    background-color: #DEEBFF;
-    position: relative;
-    left: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
 }
-.title_bouton_filtre
-{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    padding-left: 20px;
-    font-size: 55%;
-    border-top: 2px #F2F2F2 solid;
-    border-right: 2px #F2F2F2 solid;
-    border-bottom: 2px #F2F2F2 solid;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}*/
+
 .bouton_filtre
 {
     height: 100%;
+    
     /* padding: 10px; */
     width: auto;
+
     background-color: green;
+    /* background-color: white; */
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
     align-items: center;
     
 }
@@ -352,33 +315,32 @@ body
 .icon_bouton_filtre
 {
     height: 100%;
-    min-width: fit-content;
-    padding: 15px;
+    width: 40px;
     border-radius: 40px;
     background-color: #DEEBFF;
-    position: relative;
-    left: 10px;
     display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
+    position: relative;
+    left: 20px;
 
 }
 
 .title_bouton_filtre
 {
-    height: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    /* font-size: 55%; */
+    height: 36px; /* prendre la hauteur moins le border top + border bottom ? */
+    padding-right: 14px;  /*je pense qu'il faut que ca soit 50% de la height? pour faire un cercle parfait MAJ NON JE PENSE PAS*/
+    padding-left: 30px;
     border-top: 2px #F2F2F2 solid;
     border-right: 2px #F2F2F2 solid;
     border-bottom: 2px #F2F2F2 solid;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    overflow-wrap: anywhere;
+    /* overflow-wrap: anywhere;  */
+    display: flex;
+    align-items: center;
 }
+
 
 #information_message
 {
@@ -523,6 +485,11 @@ body
         font-weight: 600;
     }
 
+    h2
+    {
+        font-size: 23px;
+    }
+
     #research_section
     {
         /* margin-top: 75px; */
@@ -604,12 +571,23 @@ body
 
     #filter_bar
     {
-        /* display: none; */
+        flex-direction: column;
+        align-items: flex-start;
     }
+
+
+    #filter_list
+    {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
 
     #information_message
     {
-        /* display: none; */
+        display: none;
     }
 }
 
