@@ -21,6 +21,8 @@ h1
 h2
 {
     margin: 0;
+    padding: 0;
+    font-size: 15px;
 }
 
 p
@@ -120,9 +122,23 @@ body
 
 /* SEARCH BANNER */
 
+#main
+{
+    margin: 0;
+    padding: 0;
+}
+
+#body
+{
+    margin: 0;
+    padding: 0;
+}
+
 #research_section
 {
-    background-color: green;
+    /* background-color: green; */
+    margin: 0;
+    padding: 0;
     height: 230px;
     display: flex;
     flex-direction: column;
@@ -133,7 +149,7 @@ body
 #search_banner
 {
     height: 70px;
-    background-color: red;
+    /* background-color: red; */
     /* margin-bottom: 30px; */
     display: flex;
     flex-direction: column;
@@ -154,12 +170,14 @@ body
 
 #search_bar
 {
-    height: 40px;
+    margin: 0;
+    padding: 0;
+    height: 38px;
     width: 320px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: pink;
+    background-color: white;
 }
 
 #icon_mylocation
@@ -170,18 +188,20 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
 }
 
 #location_dot
 {
+    font-size: 1em;
     color: black;
 }
 
 #input_box
 {
-    height: 38px;
+    /* height: 38px; */
+    height: 95%;
     width: 55%;
     border-top: 1px #F2F2F2 solid;
     border-bottom: 1px #F2F2F2 solid;
@@ -196,7 +216,8 @@ body
 {
     padding-left: 7px;
     top: 0;
-    height:36px;
+    /* height:36px; */
+    height: 90%;
     width: 93%; /* POURQUOI CA BUG ICI???????? 100% ca deborde sur le bloc d'apres ???? */
     border: 0; /* border vire les border du input */
     outline: none; /* outline vire le highlight le truc bleu du input */
@@ -220,6 +241,11 @@ body
     color: white;
 }
 
+#magnifying_glass
+{
+    display: none;
+}
+
 #bouton_search
 {
     margin: 0;
@@ -239,33 +265,50 @@ body
 /* FILTER BAR */
 #filter_bar
 {
+    margin: 6px;
     background-color: aqua;
-    height: 60px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#filter_bar_title
+{
+    height: 100%;
+    width: 5%;
     display: flex;
     align-items: center;
 }
 
 #filter_list
 {
+    background-color: plum;
+    height: 100%;
+    width: 66%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #filter_bar_title
 {
     margin-right: 15px;
-    font-size: 55%;
+    /* font-size: 55%; */
 }
 
+/*
 .bouton_filtre
 {
     height: 100%;
+    background-color: green;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     
 }
-
 .icon_bouton_filtre
 {
     height: 18px;
@@ -279,7 +322,6 @@ body
     justify-content: center;
     align-items: center;
 }
-
 .title_bouton_filtre
 {
     padding-top: 5px;
@@ -292,6 +334,50 @@ body
     border-bottom: 2px #F2F2F2 solid;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+}*/
+.bouton_filtre
+{
+    height: 100%;
+    /* padding: 10px; */
+    width: auto;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* justify-content: space-between; */
+    align-items: center;
+    
+}
+
+.icon_bouton_filtre
+{
+    height: 100%;
+    min-width: fit-content;
+    padding: 15px;
+    border-radius: 40px;
+    background-color: #DEEBFF;
+    position: relative;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+.title_bouton_filtre
+{
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    /* font-size: 55%; */
+    border-top: 2px #F2F2F2 solid;
+    border-right: 2px #F2F2F2 solid;
+    border-bottom: 2px #F2F2F2 solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow-wrap: anywhere;
 }
 
 #information_message
@@ -325,6 +411,10 @@ body
     color: #0065FC;
 }
 
+#section_hebergements
+{
+    height: 100000px;
+}
 
 /* ------ */
 
@@ -436,25 +526,24 @@ body
     #research_section
     {
         /* margin-top: 75px; */
-        height: 800px;
-        margin: 40px 40px 0px 40px;
+        height: 400px;
+        /* margin: 30px; */
+        margin: 5.5%;
+        /* background-color: red; */
 
         /* align-items: center; */
     }
 
     #search_banner
     {
-        height: 150px;
-        /* margin-bottom: 30px; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        height: 160px;
     }
-    #search_banner_text
+
+    #search_banner h1
     {
-        /* background-color: lightgray; */
-        /* display: none; */
+        padding-right: 10%;
     }
+
     #search_banner_text p
     {
         font-size: 23px;
@@ -463,7 +552,55 @@ body
 
     #search_bar
     {
+        height:70px;
+        width: 100%;
     }
+
+    #icon_mylocation
+    {
+        width: 18%;
+    }
+
+    #location_dot
+    {
+        font-size: 1.5em;
+    }
+    #input_search
+    {
+        padding-left: 10%;
+        font-size: 1.5em;
+    }
+    #input_box
+    {
+        width: auto;
+    }
+
+    #bouton_search
+    {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 17.5%;
+        background-color: #0065FC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+
+    }
+
+    #bouton_search p
+    {
+        display: none;
+    }
+
+    #magnifying_glass
+    {
+        color: white;
+        display: flex;
+        font-size: 1.5em;
+    }
+
 
     #filter_bar
     {
