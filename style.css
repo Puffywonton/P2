@@ -461,10 +461,10 @@ header ul
         width: 100%;
     }
 
-    p
+    /* p
     {
-        /* font-size: 25px; */
-    }
+        font-size: 25px;
+    } */
 
     #top_banner
     {
@@ -546,25 +546,6 @@ header ul
 
     /* FIN DU HEADER (QU'IL FAUT REFAIRE??? C'EST TROP LONG???) */
 
-    h1
-    {
-        /* 
-        
-        
-        
-        
-        
-        
-        
-        */
-        /* font-weight: 600; */
-    }
-
-    h2
-    {
-        /* font-size: 23px; */
-    }
-
     #research_section
     {
         /* margin-top: 75px; */
@@ -616,7 +597,7 @@ header ul
 
     #location_dot
     {
-        /* font-size: 1.5em; */
+        font-size: 1.5em;
     }
     #input_search
     {
