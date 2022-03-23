@@ -1,99 +1,114 @@
+/* :root definir la taille et foutre la police ici */
+
+:root
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+
+}
+
 a:link { text-decoration: none; color: black; }
-
-
 a:visited { text-decoration: none; color: black; }
-
+a:active { text-decoration: none; color: black; }
 
 /* a:hover { text-decoration: none; color: #0065FC; border-top: 4px #0065FC solid; } */
 /* border-top: 2px #0065FC solid; add that for hover effect */
 
-a:active { text-decoration: none; color: black; }
+
 
 /* Farandole de reglages */
 
 h1
 {
     margin: 0;
-    font-size: 17px;
+    padding: 0;
+    font-size: 0.832rem; 
     font-weight: 600;
-    /* margin-top: 30px; */
 }
 h2
 {
     margin: 0;
     padding: 0;
-    font-size: 15px;
+    font-size: 0.67rem;
+    font-weight: 600;
 }
-
+h3
+{
+    margin: 0;
+    padding: 0;
+    font-size: 0.61rem;
+    font-weight: 600;
+}
 p
 {
-    /* font-size: small; */
-    font-size: 12px;
+    font-size: 0.61rem;
     margin: 0;
     padding: 0;
 }
+
+.fa-solid
+{
+    color: #0065FC;
+}
+
 
 /* BODY */
 
 body
 {
-    font-family: 'Raleway', sans-serif;
+    /* max-width: 1120px;    */
+    max-width: 992px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 92%;
-    /* C'est bon ca????? */
 }
 
 /* HEADER */
 
-#top_banner
+header
 {
     height: 80px;
+    margin: 0;
+    padding: 0;
     /* background-color: lightcoral; */
     display: flex;
     justify-content: space-between;
-    
 }
 
 #booki_home
 {
-    margin-left: 20px;
+    margin-left: 2px;
     position:relative;
-    top: 31px;
-    height: 40%;
-    width: 50px;
-    /* background-color: aqua; */
-    background-image: url('images/logo/Booki.png');
+    height: 32px;
+    width: 72px;
+    top: 29px;
+    background-image: url('images/logo/Booki@3x.png');
     background-size: cover;
 }
 
 #booki_home:hover
 {
-    height: 41%;
+    width: 74px;
 }
 
 
-#nav_banner
+header nav
 {
-    height: 100%;
-    width: 215px;
-    /* background-color: lightgray; */
+    width: 221px;
 }
 
-#nav_list
+header ul
 {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content:space-between;
     
 }
 
-#nav_list li
+.nav_list
 {
     height: 100%;
     /* background-color: red; */
@@ -101,114 +116,84 @@ body
     text-decoration: none;
     display: flex;
     align-items: center;
-    font-size: small;
 }
-
-#nav_list a
+.nav_list li
 {
     height: 100%;
-    padding: 0px 19px 0px 19px;
+}
+
+.nav_list a
+{
+    height: 100%;
+    padding: 0px 18px 0px 18px;
     /* background-color: green; */
     display: flex;
     align-items: center;
 }
 
-#nav_list a:hover
+.nav_list a:hover
 {
     text-decoration: none; color: #0065FC; border-top: 4px #0065FC solid;
 }
 
 /* MAIN */
 
-/* SEARCH BANNER */
-
-#main
-{
-    margin: 0;
-    padding: 0;
-}
-
-#body
-{
-    margin: 0;
-    padding: 0;
-}
-
 #research_section
 {
     /* background-color: green; */
     margin: 0;
-    padding: 0;
-    height: 230px;
+    padding: 0 0 0 3px;
+    height: 220px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
 }
 
 #search_banner
 {
-    height: 70px;
-    /* background-color: red; */
-    /* margin-bottom: 30px; */
+    height: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-/* #search_banner_text
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-
-#search_banner_text p
-{
-    margin-top: 2px;
-}
+/* BOUTON SEARCH CSS ICI */
 
 #search_bar
 {
-    margin: 0;
-    padding: 0;
-    height: 38px;
-    width: 320px;
+    width: 310px;
+    height: 40px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: white;
 }
 
 #icon_mylocation
 {
     height: 100%;
-    width: 12%;
+    width: 40px;
     background-color: #F2F2F2;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-top-left-radius: 25%;
-    border-bottom-left-radius: 25%;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
-
-#icon_mylocation:hover #location_dot
-    {
-        /* background-color: #DEEBFF; */
-        color: #0065FC;
-    }
-
 #location_dot
 {
-    font-size: 1em;
+    font-size: 0.65rem;
     color: black;
 }
 
+#icon_mylocation:hover #location_dot
+{
+    color: #0065FC;
+}
+
+
 #input_box
 {
-    /* height: 38px; */
-    height: 95%;
-    width: 55%;
+    height: 38px;
+    width: 170px;
+    /* background-color: white; */
     border-top: 1px #F2F2F2 solid;
     border-bottom: 1px #F2F2F2 solid;
     display: flex;
@@ -217,34 +202,45 @@ body
 
 #input_box input
 {
+    /* padding-left: 8px; */
     font-family: 'Raleway', sans-serif;
+    font-size: 0.67rem;
     font-weight: 600;
 }
+
 #input_search
 {
-    padding-left: 7px;
-    top: 0;
-    /* height:36px; */
-    height: 90%;
-    width: 93%; /* POURQUOI CA BUG ICI???????? 100% ca deborde sur le bloc d'apres ???? */
-    border: 0; /* border vire les border du input */
-    outline: none; /* outline vire le highlight le truc bleu du input */
+    padding-left: 10px;
+    height: 100%;
+    width: 170px;
+    border: 0; /* border vire les borders du input */
+    outline: none; /* outline vire le highlight bleu du input */
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-
 ::placeholder {
-    color: black; /* nettoyer ce truc ici*/
+    color: black; /* changer la couleur du input search*/
   }
+
+#bouton_search
+{
+    height: 100%;
+    width: 100px;
+    background-color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
 #bouton_search p
 {
     padding: 0;
     margin: 0;
-    /* height: 100%; */
-    font-size: 14px;
+    font-size: 0.67rem;
     font-weight: 600;
     color: white;
 }
@@ -254,106 +250,72 @@ body
     display: none;
 }
 
-#bouton_search
-{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 34%;
-    background-color: #0065FC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-/* Il Y A UN PROBLEME ICI entre la champ input et le bouton search il y a un trou (foutre le background color pour le voir) /*
-
 /* FILTER BAR */
 #filter_bar
 {
-    margin: 6px;
-    /* background-color: aqua; */
-    height: 40px;
-    width: 100%;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
 #filter_bar_title
 {
-    height: 40px;
-    width: 50px;
+    margin-left: 5px;
+    margin-right: 25px;
     display: flex;
     align-items: center;
 }
 
-#filter_list
-{
-    /* background-color: plum; */
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.bouton_filtre_a
-{
-    height: 40px;
-}
-
-.bouton_filtre
-{
-    height: 100%;
-    
-    /* padding: 10px; */
-    width: auto;
-
-    /* background-color: green; */
-    /* background-color: white; */
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-evenly; */
-    align-items: center;
-    
-}
-
-.icon_bouton_filtre
-{
-    height: 100%;
-    width: 40px;
+#filter_bar a {
+    float: left;
+    margin: 5px 16px 5px 0;
+    line-height: 36px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 17px 0 44px;
+    position: relative;
+    border: 2px solid #F2F2F2;
     border-radius: 40px;
-    background-color: #DEEBFF;
+  }
+  
+.filter_icon{
+    width: 40px;
+    height: 40px;
+    background: #DEEBFF;
+    position: absolute;
+    left: -3px;
+    top: -2px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    left: 20px;
+  }
 
+.filter_icon i{
+    font-size: 0.7rem;    
 }
 
-.title_bouton_filtre
+#filter_bar a:hover
 {
-    height: 36px; /* prendre la hauteur moins le border top + border bottom ? */
-    padding-right: 14px;  /*je pense qu'il faut que ca soit 50% de la height? pour faire un cercle parfait MAJ NON JE PENSE PAS*/
-    padding-left: 30px;
-    border-top: 2px #F2F2F2 solid;
-    border-right: 2px #F2F2F2 solid;
-    border-bottom: 2px #F2F2F2 solid;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    /* overflow-wrap: anywhere;  */
-    display: flex;
-    align-items: center;
+    background-color: #0065FC;
+    color: white;
+    border: 2px solid #0065FC;
 }
 
+#filter_bar a:hover .filter_icon
+{
+    background-color: white;
+    border: 2px solid #0065FC;
+    width: 36px;
+    height: 36px;
+    top: -2px;
+}
 
 #information_message
 {
     height: 40px;
-    background-color: yellow;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -368,32 +330,129 @@ body
     width: 17px;
     border: 1px #F2F2F2 solid;
     border-radius: 17px;
-    
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* RECOLOR ICONS */
-
-.fa-solid
+#logo_information i
 {
-    color: #0065FC;
+    font-size: 0.5rem;
 }
 
-#section_hebergements
+
+
+
+
+
+/* *********************************        SECTION HEBERGEMENTS        **********************************/
+
+
+#section_hebergement
 {
-    height: 100000px;
+    height: 480px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section_hebergement h1
+{
+    margin-bottom: 20px;
+}
+
+#bloc_hebergement
+{
+    /* margin-right: 15px; */
+    padding: 30px;
+    width: 590px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+#bloc_vignette_hebergement
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.vignette_hebergement
+{
+    width: 175px;
+    height: 150px;
+    background-color: white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.vignette_photo
+{
+    width: 175px;
+    height: 90px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: url('images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+    background-size: cover;
+}
+
+.vignette_text
+{
+    height: 60px;
+    /* margin-left: 10px; */
+    margin: 5px 0 5px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.vignette_text p
+{
+    font-size: 0.51rem;
+}
+
+.vignette_text b
+{
+    font-weight: 600;
+}
+
+/* QUESTION: COMMENT ON FAIT LES ETOILES? */
+
+.stars
+{
+    margin: 0;
+    padding: 0;
+    font-size: 0.45rem;
+}
+
+#bloc_populaire
+{
+    padding: 30px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+#populaire_title
+{
+    display: flex;
+    justify-content: space-between;
 }
 
 /* ------ */
+
+
+
+/* *********************************        FORMAT TABLETTE + MOBILE        **********************************/
 
 /* @media screen and (min-width: 768px) and (max-width: 992px)
 {
 
 } */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 992px) /* maybe change back to mobile */
 {
     body
     {
@@ -404,7 +463,7 @@ body
 
     p
     {
-        font-size: 25px;
+        /* font-size: 25px; */
     }
 
     #top_banner
@@ -425,7 +484,7 @@ body
         height: 30%;
         width: 150px;
         /* background-color: aqua; */
-        background-image: url('images/logo/Booki@3x.png');
+        
         background-size: cover;
     }
 
@@ -489,13 +548,21 @@ body
 
     h1
     {
-        font-size: 32px;
-        font-weight: 600;
+        /* 
+        
+        
+        
+        
+        
+        
+        
+        */
+        /* font-weight: 600; */
     }
 
     h2
     {
-        font-size: 23px;
+        /* font-size: 23px; */
     }
 
     #research_section
@@ -523,7 +590,7 @@ body
 
     #search_banner_text p
     {
-        font-size: 23px;
+        /* font-size: 23px; */
         margin-top: 18px;
     }
 
@@ -549,12 +616,12 @@ body
 
     #location_dot
     {
-        font-size: 1.5em;
+        /* font-size: 1.5em; */
     }
     #input_search
     {
         padding-left: 10%;
-        font-size: 1.5em;
+        /* font-size: 1.5em; */
     }
     #input_box
     {
@@ -584,7 +651,7 @@ body
     {
         color: white;
         display: flex;
-        font-size: 1.5em;
+        /* font-size: 1.5em; */
     }
 
 

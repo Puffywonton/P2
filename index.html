@@ -8,18 +8,16 @@
         <!-- EST CE QUE C'EST COMME CA QU'IL FAUT FAIRE???-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;800&display=swap" rel="stylesheet">
         <!-- PAREIL ICI BONNE MANIERE?-->
         <title>Booki</title>
     </head>
     <body>
-        <header id="top_banner">
-                <!-- <div id="booki_logo_box">
-                    <a href=""><img id="booki_logo" src="images/logo/Booki.png" alt="logo booki" /></a>
-                </div> EST CE QU'IL FAUT UTILISER DES IMAGES OU JE CHANGE AVEC LE CSS (une des images n'est pas centre je suis confus)-->
+        <header>
                 <a id="booki_home" href=""></a>
-                <nav id="nav_banner">
-                    <ul id="nav_list">
+                <!-- <a id="booki_home" href=""><img id="booki_logo" src="images/logo/Booki.png" alt="logo booki" /></a> -->
+                <nav>
+                    <ul class="nav_list">
                         <li><a href=""><p>Hébergements</p></a></li>
                         <li><a href=""><p>Activités</p></a></li>
                     </ul>
@@ -30,10 +28,8 @@
             <section id="research_section">
 
                 <div id="search_banner">
-                    <div id="search_banner_text">
-                        <h1>Trouvez vote hébergement pour des vacances de rêve</h1>
-                        <p>En plein centre ville ou en pleine nature</p>
-                    </div>
+                    <h1>Trouvez vote hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
                 </div>    
                     
                     
@@ -44,7 +40,7 @@
                     </a>
                         
                     <div id="input_box">
-                        <input type="text" name="location" id="input_search" placeholder="Marseille, France" size="30" maxlength="40"/>
+                        <input type="search" name="location" id="input_search" value="Marseille, France" size="30" maxlength="40"/>
                     </div>
 
                     <a id="bouton_search" href="">
@@ -59,45 +55,30 @@
                     <div id="filter_bar_title">
                         <h2>Filtres</h2>
                     </div>
-    
-
-                    <div id="filter_list">
-                        <a class="bouton_filtre_a" href=""><div class="bouton_filtre" id="filter_economique">
-                            <div class="icon_bouton_filtre" id="icon_economique">
-                                <i class="fa-solid fa-money-bill-wave"></i>
-                            </div>
-                            <div class="title_bouton_filtre" id="filter_economique_title">
-                                <h2>Économique</h2>
-                            </div>
-                        </div></a>
-        
-                        <a class="bouton_filtre_a" href=""><div class="bouton_filtre" id="filter_familial">
-                            <div class="icon_bouton_filtre" id="icon_familial">
-                                <i class="fa-solid fa-child"></i>
-                            </div>
-                            <div class="title_bouton_filtre" id="filter_familial_title">
-                                <h2>Familial</h2>
-                            </div>
-                        </div></a>
-        
-                        <a class="bouton_filtre_a" href=""><div class="bouton_filtre" id="filter_romantique">
-                            <div class="icon_bouton_filtre" id="icon_romantique">
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                            <div class="title_bouton_filtre" id="filter_romantique_title">
-                                <h2>Romantique</h2>
-                            </div>
-                        </div></a>
-        
-                        <a class="bouton_filtre_a" href=""><div class="bouton_filtre" id="filter_animaux">
-                            <div class="icon_bouton_filtre" id="icon_animaux">
-                                <i class="fa-solid fa-dog"></i>
-                            </div>
-                            <div class="title_bouton_filtre" id="filter_animaux">
-                                <h2>Animaux autorisés</h2>
-                            </div>
-                        </div></a>
-                    </div>  
+                    <a href="#">
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                        </div>
+                        <div><h2>Économique</h2></div>
+                      </a>
+                      <a href="#">
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-child-reaching"></i>
+                        </div>
+                        <div><h2>Familial</h2></div>
+                      </a>
+                      <a href="#">
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div><h2>Romantique</h2></div>
+                      </a>
+                      <a href="#">
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-dog"></i>
+                        </div>
+                        <div><h2>Animaux autorisés</h2></div>
+                      </a>
                 </div>
 
                 <div id="information_message">
@@ -109,12 +90,135 @@
 
             </section>
 
-            <section id="section_hebergements">
-                <div id="bloc_hebergements">
+            <section id="section_hebergement">
+                <div id="bloc_hebergement">
+                    <h1>Hébergements à Marseille</h1>
+                    <div id="bloc_vignette_hebergement">
+                        <div class="vignette_hebergement">
+                            <div class="vignette_photo">
+                            </div>
+                            <div class="vignette_text">
+                                <h3>Auberge La Cannebière</h3>
+                                <p>Nuit à partir de <b>25€</b></p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i style="color:#F2F2F2;" class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vignette_hebergement">
+                            <div class="vignette_photo">
+                            </div>
+                            <div class="vignette_text">
+                                <h3>Auberge La Cannebière</h3>
+                                <p>Nuit à partir de <b>25€</b></p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="vignette_hebergement">
+                            <div class="vignette_photo">
+                            </div>
+                            <div class="vignette_text">
+                                <h3>Auberge La Cannebière</h3>
+                                <p>Nuit à partir de <b>25€</b></p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="vignette_hebergement">
+                            <div class="vignette_photo">
+                            </div>
+                            <div class="vignette_text">
+                                <h3>Auberge La Cannebière</h3>
+                                <p>Nuit à partir de <b>25€</b></p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="vignette_hebergement">
+                            <div class="vignette_photo">
+                            </div>
+                            <div class="vignette_text">
+                                <h3>Auberge La Cannebière</h3>
+                                <p>Nuit à partir de <b>25€</b></p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="vignette_hebergement">
+                            <div class="vignette_photo">
+                            </div>
+                            <div class="vignette_text">
+                                <h3>Auberge La Cannebière</h3>
+                                <p>Nuit à partir de <b>25€</b></p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        
+                    </div>
+                    <h2>Afficher plus</h2>
 
                 </div>
 
-                <div id="bloc_popular">
+                <div id="bloc_populaire">
+                    <div id="populaire_title">
+                        <h1>Les plus populaires</h1>
+                        <i class="fa-regular fa-chart-bar"></i>
+                    </div>
+                    <div class="bloc_vignette_populaire">
+                        <div class="vignette_photo">
+
+                        </div>
+                        <div class="vignette_text">
+                            <h3>Hôtel Le soleil du matin</h3>
+                            <p>Nuit à partir de <b>128€</b></p>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    
+
 
                 </div>
             </section>
