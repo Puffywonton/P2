@@ -88,7 +88,8 @@ header
     position:relative;
     height: 32px;
     width: 72px;
-    top: 29px;
+    /* top: 29px; */
+    top: 30px;
     background-image: url('images/logo/Booki@3x.png');
     background-size: cover;
 }
@@ -155,7 +156,7 @@ main
 
 #research_section
 {
-    /* background-color: green; */
+    background-color: green;
     margin: 0;
     padding: 0 0 0 3px;
     height: 220px;
@@ -170,8 +171,13 @@ main
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-bottom: 5px;
 }
 
+#search_banner p
+{
+    padding-top: 6px;
+}
 /* BOUTON SEARCH CSS ICI */
 
 #search_bar
@@ -268,6 +274,7 @@ main
 /* FILTER BAR */
 #filter_bar
 {
+    margin-top: 16px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
