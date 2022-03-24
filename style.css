@@ -4,7 +4,6 @@
 {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-
 }
 
 a:link { text-decoration: none; color: black; }
@@ -41,7 +40,7 @@ h3
 }
 p
 {
-    font-size: 0.61rem;
+    font-size: 0.6rem;
     margin: 0;
     padding: 0;
 }
@@ -54,21 +53,29 @@ p
 
 /* BODY */
 
-body
+/* body
 {
-    /* max-width: 1120px;    */
     max-width: 992px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+} */
+
+body
+{
+    margin: 0;
 }
 
 /* HEADER */
 
 header
 {
+    max-width: 992px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
     height: 80px;
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     /* background-color: lightcoral; */
     display: flex;
@@ -137,6 +144,14 @@ header ul
 }
 
 /* MAIN */
+
+main
+{
+    max-width: 992px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #research_section
 {
@@ -354,6 +369,7 @@ header ul
     width: 100%;
     display: flex;
     justify-content: space-between;
+    /* background-color: bisque; */
 }
 
 #section_hebergement h1
@@ -365,7 +381,7 @@ header ul
 {
     /* margin-right: 15px; */
     padding: 30px;
-    width: 590px;
+    width: 592px;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
@@ -375,17 +391,29 @@ header ul
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.vignette_hebergement
+
+.vignette
 {
-    width: 175px;
-    height: 150px;
-    background-color: white;
-    margin-bottom: 20px;
     display: flex;
-    flex-direction: column;
     border: 4px solid white;
     border-radius: 20px;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: white;
+
+}
+
+#bloc_vignette_hebergement .vignette
+{
+    width: 175px;
+    height: 150px;
+    /* background-color: white; */
+    /* margin-bottom: 20px; */
+    /* display: flex; */
+    flex-direction: column;
+    /* border: 4px solid white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1); */
 }
 
 #bloc_hebergement .vignette_photo
@@ -401,7 +429,7 @@ header ul
 .vignette_text
 {
     height: 60px;
-    margin: 5px 0 5px 12px;
+    margin: 5px 0 5px 7px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -465,66 +493,185 @@ header ul
     justify-content: space-between;
 }
 
-.vignette_populaire
+
+#bloc_vignette_populaire
 {
-    background-color: white;
-    width: 250px;
-    height: 100px;
-    margin-bottom: 20px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bloc_populaire .vignette
+{
+    /* background-color: white; */
+    width: 247px;
+    height: 100px;
+    /* margin-bottom: 20px; */
+    /* display: flex;
     border: 4px solid white;
     border-radius: 20px;
-    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1); */
 
 }
-.vignette_populaire .vignette_photo
+
+
+
+#bloc_populaire .vignette_photo
 {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 100px;
+    width: 95px;
     background-image: url('images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
     background-size: cover;
 }
 
 #bloc_populaire .stars
 {
-    margin: 5px 0 12px 12px;
+    margin: 5px 0 5px 14px;
 }
 
 #bloc_populaire .vignette_text
 {
     overflow-wrap: break-word;
-    margin: 5px 5px 5px 12px;
+    margin: 5px 5px 5px 14px;
+
 }
 
-/* *********************************        FOOTER        **********************************/
+/* *********************************        SECTION ACTIVITE        **********************************/
 
+#section_activities
+{
+    margin-top: 30px;
+    padding-top: 30px;
+    height: 460px;
+    width: 100%;
+    /* background-color: bisque; */
+}
+
+#section_activities h1
+{
+    margin-bottom: 20px;
+}
+
+#vieux_port
+{
+    height: 325px;
+}
+
+#fort_de_pomegues
+{
+    height: 170px;
+}
+
+#iles_du_frioul
+{
+    height: 115px;
+}
+
+#parc_national
+{
+    height: 325px;
+}
+
+#notre_dame
+{
+    height: 135px;
+}
+
+#parc_longchamp
+{
+    height: 145px;
+}
+
+#section_activities .vignette
+{
+    width: 215px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 0;
+    padding-left: 0; */
+}
+
+#section_activities .vignette_text
+{
+    /* display: none; */
+    height: 50px;
+    width: 100%;
+    margin: 0px 0 0px 0px;
+    padding: 0 0 0 15px;
+}
+
+#section_activities .vignette_photo
+{
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width: 100%;
+    background-color: #0065FC;
+    background-image: url('images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.bloc_activities
+{
+    /* background-color: pink; */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* *********************************        FOOTER                      **********************************/
 
 footer
 {
+    margin: 0 0 0 0;
+    padding: 0;
     background-color: #F2F2F2;
+    height: 150px;
+}
+#footer_box
+{
+    max-width: 992px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: flex-start;
-    max-width: auto !important;
-    margin: 0;
-    width: 100% !important;
+    padding-top: 32px;
 }
+
 
 .footer
 {
     width: 200px;
     padding-right: 120px;
     /* background-color: red; */
+    /* c'est de la merde ici il faut refaire */
+}
+
+.footer h2
+{
+    padding: 0px 0 15px 0;
 }
 .footer ul
 {
     margin: 0;
-    padding: 0;
+    padding:0;
 }
 .footer li
 {
     margin: 0;
-    padding: 0;
+    padding: 0 0 10px 0;
+    list-style-type: none;
+    text-decoration: none;
+    
 }
 
 

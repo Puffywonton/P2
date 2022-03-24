@@ -94,7 +94,7 @@
                 <div id="bloc_hebergement">
                     <h1>Hébergements à Marseille</h1>
                     <div id="bloc_vignette_hebergement">
-                        <div class="vignette_hebergement">
+                        <div class="vignette">
                             <div class="vignette_photo">
                             </div>
                             <div class="vignette_text">
@@ -109,7 +109,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="vignette_hebergement">
+                        <div class="vignette">
                             <div class="vignette_photo">
                             </div>
                             <div class="vignette_text">
@@ -125,7 +125,7 @@
                             </div>
 
                         </div>
-                        <div class="vignette_hebergement">
+                        <div class="vignette">
                             <div class="vignette_photo">
                             </div>
                             <div class="vignette_text">
@@ -141,7 +141,7 @@
                             </div>
 
                         </div>
-                        <div class="vignette_hebergement">
+                        <div class="vignette">
                             <div class="vignette_photo">
                             </div>
                             <div class="vignette_text">
@@ -157,7 +157,7 @@
                             </div>
 
                         </div>
-                        <div class="vignette_hebergement">
+                        <div class="vignette">
                             <div class="vignette_photo">
                             </div>
                             <div class="vignette_text">
@@ -173,7 +173,7 @@
                             </div>
 
                         </div>
-                        <div class="vignette_hebergement">
+                        <div class="vignette">
                             <div class="vignette_photo">
                             </div>
                             <div class="vignette_text">
@@ -204,54 +204,57 @@
                         <h1>Les plus populaires</h1>
                         <i class="fa-regular fa-chart-bar"></i>
                     </div>
-                    <div class="vignette_populaire">
-                        <div class="vignette_photo"></div>
-                        <div class="bloc_text">
-                            <div class="vignette_text">
-                                <h3>Hôtel Le soleil du matin</h3>
-                                <p>Nuit à partir de <b>128€</b></p>
+                    <div id="bloc_vignette_populaire">
+                        <div class="vignette">
+                            <div class="vignette_photo"></div>
+                            <div class="bloc_text">
+                                <div class="vignette_text">
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p>Nuit à partir de <b>128€</b></p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
                             </div>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="vignette">
+                            <div class="vignette_photo"></div>
+                            <div class="bloc_text">
+                                <div class="vignette_text">
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p>Nuit à partir de <b>128€</b></p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vignette">
+                            <div class="vignette_photo"></div>
+                            <div class="bloc_text">
+                                <div class="vignette_text">
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p>Nuit à partir de <b>128€</b></p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="vignette_populaire">
-                        <div class="vignette_photo"></div>
-                        <div class="bloc_text">
-                            <div class="vignette_text">
-                                <h3>Hôtel Le soleil du matin</h3>
-                                <p>Nuit à partir de <b>128€</b></p>
-                            </div>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="vignette_populaire">
-                        <div class="vignette_photo"></div>
-                        <div class="bloc_text">
-                            <div class="vignette_text">
-                                <h3>Hôtel Le soleil du matin</h3>
-                                <p>Nuit à partir de <b>128€</b></p>
-                            </div>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
+                    
                     
 
 
@@ -259,33 +262,77 @@
             </section>
 
             <section id="section_activities">
-                <div class="bloc_activites" id="vieux_ports">
+                <h1>Activités à Marseille</h1>
+                <div class="bloc_activities">
+                    <div id="vieux_port" class="vignette">
+                        <div class="vignette_photo"></div>
+                        <div class="vignette_text">
+                            <h3>Vieux Port</h3>
+                        </div>
+                    </div>
+                    <div id="fort_de_pomegues" class="vignette">
+                        <div class="vignette_photo"></div>
+                        <div class="vignette_text">
+                            <h3>Fort de Pomègues</h3>
+                        </div>
+                    </div>
+                    <div id="iles_du_frioul" class="vignette">
+                        <div class="vignette_photo"></div>
+                        <div class="vignette_text">
+                            <h3>îles du Frioul</h3>
+                        </div>
+                    </div>
+                    <div id="parc_national" class="vignette">
+                        <div class="vignette_photo"></div>
+                        <div class="vignette_text">
+                            <h3>Parc National des Calanques</h3>
+                        </div>
+                    </div>
+                    <div id="notre_dame" class="vignette">
+                        <div class="vignette_photo"></div>
+                        <div class="vignette_text">
+                            <h3>Notre-Dame-de-la-Garde</h3>
+                        </div>
+                    </div>
+                    <div id="parc_longchamp" class="vignette">
+                        <div class="vignette_photo"></div>
+                        <div class="vignette_text">
+                            <h3>Parc Longchamp</h3>
+                        </div>
+                    </div>
+
                 </div>
+                
+                
             </section>
         </main>
+
         <footer>
-            <div class="footer">
-                <h2>A propos</h2>
-                <ul>
-                    <p>Fonctionnement du site</p>
-                    <p>Conditions générales de vente</p>
-                    <p>Données et confidentialité</p>
-                </ul>
+            <div id="footer_box">
+                <div class="footer">
+                    <h2>A propos</h2>
+                    <ul>
+                        <li><p>Fonctionnement du site</p></li>
+                        <li><p>Conditions générales de vente</p></li>
+                        <li><p>Données et confidentialité</p></li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <h2>Nos hébergements</h2>
+                    <ul>
+                        <li><p>Charte qualité</p></li>
+                        <li><p>Soumettre votre hôtel</p></li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <h2>Assistance</h2>
+                    <ul>
+                        <li><p>Centre d'aide</p></li>
+                        <li><p>Nous contacter</p></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer">
-                <h2>Nos hébergements</h2>
-                <ul>
-                    <p>Charte qualité</p>
-                    <p>Soumettre votre hôtel</p>
-                </ul>
-            </div>
-            <div class="footer">
-                <h2>Assistance</h2>
-                <ul>
-                    <p>Centre d'aide</p>
-                    <p>Nous contacter</p>
-                </ul>
-            </div>
+            
         </footer>
     </body>
 </html>
