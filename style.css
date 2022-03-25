@@ -156,17 +156,19 @@ main
 
 #research_section
 {
-    background-color: green;
+    /* background-color: green; */
     margin: 0;
     padding: 0 0 0 3px;
-    height: 220px;
-    display: flex;
+    height: 234px;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
 }
 
 #search_banner
 {
+    /* background-color: gold; */
+    padding-top: 12px;
     height: 40px;
     display: flex;
     flex-direction: column;
@@ -176,14 +178,16 @@ main
 
 #search_banner p
 {
-    padding-top: 6px;
+    padding-top: 4px;
 }
 /* BOUTON SEARCH CSS ICI */
 
 #search_bar
 {
+    margin-top: 9px;
+
     width: 310px;
-    height: 40px;
+    height: 38px;
     display: flex;
 }
 
@@ -212,7 +216,7 @@ main
 
 #input_box
 {
-    height: 38px;
+    height: 36px;
     width: 170px;
     /* background-color: white; */
     border-top: 1px #F2F2F2 solid;
@@ -274,7 +278,8 @@ main
 /* FILTER BAR */
 #filter_bar
 {
-    margin-top: 16px;
+    /* background-color: orange; */
+    margin-top: 18px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -291,7 +296,7 @@ main
 #filter_bar a {
     float: left;
     margin: 5px 16px 5px 0;
-    line-height: 36px;
+    line-height: 34px;
     background: white;
     color: black;
     text-decoration: none;
@@ -303,8 +308,8 @@ main
   }
   
 .filter_icon{
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     background: #DEEBFF;
     position: absolute;
     left: -3px;
@@ -330,13 +335,15 @@ main
 {
     background-color: white;
     border: 2px solid #0065FC;
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     top: -2px;
 }
 
 #information_message
 {
+    /* background-color: yellowgreen; */
+    margin-top: 8px;
     height: 40px;
     display: flex;
     justify-content: flex-start;
@@ -372,22 +379,25 @@ main
 
 #section_hebergement
 {
-    height: 460px;
+    height: 465px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     /* background-color: bisque; */
 }
 
-#section_hebergement h1
+
+#bloc_hebergement h1
 {
-    margin-bottom: 20px;
+    margin-top: 2px;
+    margin-bottom: 18px;
 }
 
 #bloc_hebergement
 {
     /* margin-right: 15px; */
-    padding: 30px;
+    /* padding: 30px; */
+    padding: 32px;
     width: 592px;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -402,10 +412,11 @@ main
 .vignette
 {
     display: flex;
-    border: 4px solid white;
+    border: 3px solid white;
     border-radius: 20px;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin-bottom: 23px;
     background-color: white;
 
 }
@@ -413,7 +424,8 @@ main
 #bloc_vignette_hebergement .vignette
 {
     width: 175px;
-    height: 150px;
+    /* height: 150px; */
+    height: 140px;
     /* background-color: white; */
     /* margin-bottom: 20px; */
     /* display: flex; */
@@ -427,15 +439,15 @@ main
 {
     width: 175px;
     height: 90px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
     background-image: url('images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
     background-size: cover;
 }
 
 .vignette_text
 {
-    height: 60px;
+    height: 50px;
     margin: 5px 0 5px 7px;
     display: flex;
     flex-direction: column;
@@ -465,6 +477,7 @@ main
 
 #afficher_plus
 {
+    margin-top: 9px;
     background-color: red;
 }
 
@@ -487,8 +500,16 @@ main
 
 #populaire_title
 {
+    margin-top: 4px;
+    padding-bottom: 18px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+}
+
+#populaire_title
+{
+    font-size: 0.95rem;
 }
 
 /* ------ */
@@ -513,7 +534,7 @@ main
 {
     /* background-color: white; */
     width: 247px;
-    height: 100px;
+    height: 101px;
     /* margin-bottom: 20px; */
     /* display: flex;
     border: 4px solid white;
@@ -549,46 +570,49 @@ main
 
 #section_activities
 {
-    margin-top: 30px;
-    padding-top: 30px;
+    margin-top: 20px;
+    padding-top: 25px;
+
     height: 460px;
     width: 100%;
-    /* background-color: bisque; */
+    background-color: bisque;
 }
 
 #section_activities h1
 {
-    margin-bottom: 20px;
+    /* margin-bottom: 10px; */
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 #vieux_port
 {
-    height: 325px;
+    height: 330px;
 }
 
 #fort_de_pomegues
 {
-    height: 170px;
+    height: 175px;
 }
 
 #iles_du_frioul
 {
-    height: 115px;
+    height: 120px;
 }
 
 #parc_national
 {
-    height: 325px;
+    height: 330px;
 }
 
 #notre_dame
 {
-    height: 135px;
+    height: 140px;
 }
 
 #parc_longchamp
 {
-    height: 145px;
+    height: 150px;
 }
 
 #section_activities .vignette
@@ -625,9 +649,9 @@ main
 
 .bloc_activities
 {
-    /* background-color: pink; */
+    background-color: pink;
     width: 100%;
-    height: 400px;
+    height: 380px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
