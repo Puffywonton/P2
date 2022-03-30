@@ -438,7 +438,7 @@ main
     border: 4px solid white;
     border-radius: 20px;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
-    margin-bottom: 27px;
+    /* margin-bottom: 27px; */
     background-color: white;
 }
 
@@ -449,6 +449,7 @@ main
     flex-direction: column;
     margin-left: -9px;
     margin-right: -9px;
+    margin-bottom: 27px;
 }
 
 .bloc_hebergement .vignette_photo
@@ -558,6 +559,7 @@ main
     height: 122px;
     margin-right: 3px;
     margin-top: 1px;
+    margin-bottom: 27px;
     /* margin-bottom: 20px; */
     /* display: flex;
     border: 4px solid white;
@@ -616,7 +618,6 @@ main
 
 .section_activities h1
 {
-    /* margin-bottom: 10px; */
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -626,60 +627,84 @@ main
     background-color: pink;
     margin-top: 20px;
     width: 100%;
+    height: 398px;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-
-#vieux_port
-{
-    height: 330px;
-}
-
-#fort_de_pomegues
-{
-    height: 175px;
-}
-
-#iles_du_frioul
-{
-    height: 120px;
-}
-
-#parc_national
-{
-    height: 330px;
-}
-
-#notre_dame
-{
-    height: 140px;
-}
-
-#parc_longchamp
-{
-    height: 150px;
+    /* flex-flow: column wrap; */
+    /* align-content: space-between; */
+    justify-content: space-between;
+    /* align-items: center; */
 }
 
 .section_activities .vignette
 {
-    width: 215px;
+    width: 22.5%;
+    height: 100%;
+    margin-bottom: 0;
     border: none;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     /* margin-left: 0;
     padding-left: 0; */
 }
 
-.section_activities .vignette_text
+.double
 {
-    /* display: none; */
-    height: 50px;
+    background-color: red;
+    width: 22.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.double .vignette
+{
+    width: 100%;
+}
+
+.double .vignette:first-child
+{
+    height: 53%;
+}
+.double .vignette:last-child
+{
+    height: 37%;
+}
+
+/* .bloc_activities .double:last-child
+{
+    flex-direction: column-reverse;
+} */
+
+.bloc_activities .double:last-child .vignette:first-child /* la derniere colonne n'a pas la meme dimension que la 2eme BONNE SOLUTION? */
+{
+    height: 44%;
+}
+.bloc_activities .double:last-child .vignette:last-child
+{
+    height: 47%;
+}
+
+/* .section_activities .vignette_text
+{
+    height: 67px;
     width: 100%;
     margin: 0px 0 0px 0px;
     padding: 0 0 0 15px;
+} */
+
+.bloc_activities .vignette_text
+{
+    height: 55px;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+
+.double .vignette_text
+{
+    height: 67px;
 }
 
 .section_activities .vignette_photo
@@ -701,34 +726,36 @@ main
 
 footer
 {
-    margin: 0 0 0 0;
-    padding: 0;
+    margin: 0;
+    /* padding: 0; */
+    padding: 0 0 33px 0;
     background-color: #F2F2F2;
-    height: 150px;
 }
 #footer_box
 {
-    max-width: 992px;
+    background-color: lightseagreen;
+    max-width: 1200px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: flex-start;
-    padding-top: 32px;
+    /*justify-content: flex-start; */
+    justify-content: space-between;
+    padding-top: 38px;
 }
 
 
 .footer
 {
-    width: 200px;
-    padding-right: 120px;
-    /* background-color: red; */
-    /* c'est de la merde ici il faut refaire */
+    /* width: 220px; */
+    width: 20%;
+    margin-right: 12.25%;
+    background-color: lightslategray;
 }
 
 .footer h2
 {
-    padding: 0px 0 15px 0;
+    padding: 0px 0 19px 0;
 }
 .footer ul
 {
@@ -738,7 +765,7 @@ footer
 .footer li
 {
     margin: 0;
-    padding: 0 0 10px 0;
+    padding: 0 0 12px 0;
     list-style-type: none;
     text-decoration: none;
     
