@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- JE NE SAIS PAS CE QUE C'EST MAIS CA FAIT FONCTIONNE LE SITE-->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/065a5ed28c.js" crossorigin="anonymous"></script>
-        <!-- EST CE QUE C'EST COMME CA QU'IL FAUT FAIRE???-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;800&display=swap" rel="stylesheet">
-        <!-- PAREIL ICI BONNE MANIERE?-->
         <title>Booki</title>
     </head>
     <body>
         <header>
-                <a id="booki_home" href=""></a>
-                <!-- <a id="booki_home" href=""><img id="booki_logo" src="images/logo/Booki.png" alt="logo booki" /></a> -->
+                <a id="booki_home" href=""><img src="images/logo/Booki@3x.png" alt="logo booki"></a>
                 <nav>
                     <ul class="nav_list">
                         <li><a href="#section_hebergement"><p>Hébergements</p></a></li>
@@ -25,14 +22,14 @@
         </header>
 
         <main>
-            <section id="research_section">
+            <section class="research_section">
 
-                <div id="search_banner">
+                <div class="search_banner">
                     <h1>Trouvez vote hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>    
                     
-                <div id="search_bar">
+                <div class="search_bar">
                         
                     <a href="" id="icon_mylocation">
                         <i id="location_dot" class="fa-solid fa-location-dot"></i>
@@ -50,8 +47,8 @@
                 </div>
     
                 
-                <div id="filter_bar">
-                    <div id="filter_bar_title">
+                <div class="filter_bar">
+                    <div class="filter_bar_title">
                         <h2>Filtres</h2>
                     </div>
                     <a href="#">
@@ -59,29 +56,29 @@
                             <i class="fa-solid fa-money-bill-wave"></i>
                         </div>
                         <div><h2>Économique</h2></div>
-                      </a>
-                      <a href="#">
+                    </a>
+                    <a href="#">
                         <div class="filter_icon">
                             <i class="fa-solid fa-child-reaching"></i>
                         </div>
                         <div><h2>Familial</h2></div>
-                      </a>
-                      <a href="#">
+                    </a>
+                    <a href="#">
                         <div class="filter_icon">
                             <i class="fa-solid fa-heart"></i>
                         </div>
                         <div><h2>Romantique</h2></div>
-                      </a>
-                      <a href="#">
+                    </a>
+                    <a href="#">
                         <div class="filter_icon">
                             <i class="fa-solid fa-dog"></i>
                         </div>
                         <div><h2>Animaux autorisés</h2></div>
-                      </a>
+                    </a>
                 </div>
 
-                <div id="information_message">
-                    <div id="logo_information">
+                <div class="information_message">
+                    <div class="logo_information">
                         <i class="fa-solid fa-info fa-2xs"></i>
                     </div>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -89,10 +86,10 @@
 
             </section>
 
-            <section id="section_hebergement">
-                <div id="bloc_hebergement">
+            <section class="section_hebergement">
+                <div class="bloc_hebergement">
                     <h1>Hébergements à Marseille</h1>
-                    <div id="bloc_vignette_hebergement">
+                    <div class="bloc_vignette_hebergement">
                         <a href="" class="vignette">
                             <div class="vignette_photo">
                             </div>
@@ -184,17 +181,15 @@
                             </div>
                         </a>
                     </div>
-                    <div id="afficher_plus">
-                        <a href="#"><h2>Afficher plus</h2></a>
-                    </div>
+                    <a id="afficher_plus" href="#"><h2>Afficher plus</h2></a>
                 </div>
 
-                <div id="bloc_populaire">
-                    <div id="populaire_title">
+                <div class="bloc_populaire">
+                    <div class="populaire_title">
                         <h1>Les plus populaires</h1>
-                        <i class="fa-regular fa-chart-bar"></i>
+                        <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <div id="bloc_vignette_populaire">
+                    <div class="bloc_vignette_populaire">
                         <a href="" class="vignette">
                             <div class="vignette_photo"></div>
                             <div class="bloc_text">
@@ -244,14 +239,10 @@
                             </div>
                         </a>
                     </div>
-                    
-                    
-
-
                 </div>
             </section>
 
-            <section id="section_activities">
+            <section class="section_activities">
                 <h1>Activités à Marseille</h1>
                 <div class="bloc_activities">
                     <a href="" id="vieux_port" class="vignette">
@@ -259,7 +250,7 @@
                         <div class="vignette_text">
                             <h3>Vieux Port</h3>
                         </div>
-                    </>
+                    </a>
                     <a href="" id="fort_de_pomegues" class="vignette">
                         <div class="vignette_photo"></div>
                         <div class="vignette_text">

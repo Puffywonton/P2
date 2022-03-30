@@ -3,7 +3,7 @@
 :root
 {
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 a:link { text-decoration: none; color: black; }
@@ -51,6 +51,7 @@ p
 }
 
 
+
 /* BODY */
 
 /* body
@@ -66,43 +67,40 @@ body
     margin: 0;
 }
 
-/* HEADER */
+/* *********************************        HEADER        **********************************/
 
 header
 {
-    max-width: 992px;
+    max-width: 1200px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    height: 80px;
-    /* margin: 0; */
+    margin-bottom: 0;
+    /* height: 80px; */
+    height: 95px;
     padding: 0;
-    /* background-color: lightcoral; */
+    background-color: lightcoral;
     display: flex;
     justify-content: space-between;
 }
 
-#booki_home
+#booki_home /*logo booki*/
 {
-    margin-left: 2px;
-    position:relative;
-    height: 32px;
-    width: 72px;
-    /* top: 29px; */
-    top: 30px;
-    background-image: url('images/logo/Booki@3x.png');
-    background-size: cover;
+    background-color: greenyellow;
+    height: 40%;
+    margin-top: 39px;
+    margin-left: 5px;
 }
-
-#booki_home:hover
+#booki_home img
 {
-    width: 74px;
+    height: 100%;
+    width: auto;
 }
-
 
 header nav
 {
-    width: 221px;
+    background-color: antiquewhite;
+    width: 265px;
 }
 
 header ul
@@ -119,10 +117,11 @@ header ul
 .nav_list
 {
     height: 100%;
-    /* background-color: red; */
+    background-color: red;
     list-style-type: none;
     text-decoration: none;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .nav_list li
@@ -133,68 +132,73 @@ header ul
 .nav_list a
 {
     height: 100%;
-    padding: 0px 18px 0px 18px;
-    /* background-color: green; */
+    /* padding: 0px 30px 0px 30px; */
+    padding: 0px 25px 0 25px;
+    border-top: 2px transparent solid;
+    background-color: green;
     display: flex;
     align-items: center;
 }
 
 .nav_list a:hover
 {
-    text-decoration: none; color: #0065FC; border-top: 4px #0065FC solid;
+    text-decoration: none; color: #0065FC; border-top: 2px #0065FC solid;
 }
 
 /* MAIN */
-
+/* 
 main
 {
-    max-width: 992px;
+    max-width: 1200px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+} */
+
+/* *********************************        SECTION RECHERCHE        **********************************/
+
+.research_section
+{
+    max-width: 1200px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    background-color: pink;
 }
 
-#research_section
+.search_banner
 {
-    /* background-color: green; */
-    margin: 0;
-    padding: 0 0 0 3px;
-    height: 234px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; */
+    background-color: aquamarine;
+    margin-left: 5px;
 }
 
-#search_banner
+.search_banner h1
 {
-    padding-top: 13px;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-bottom: 5px;
+    padding-top: 17px;
 }
 
-#search_banner p
+.search_banner p
 {
-    padding-top: 4px;
+    padding-top: 7px;
 }
-/* BOUTON SEARCH CSS ICI */
 
-#search_bar
+.search_bar
 {
-    margin-top: 8px;
-
-    width: 310px;
-    height: 38px;
+    background-color: red;
+    margin-left: 5px;
+    margin-top: 16px;
+    width: 375px;
+    height: 46px;
     display: flex;
 }
 
 #icon_mylocation
 {
     height: 100%;
-    width: 40px;
+    width: 16%;
     background-color: #F2F2F2;
+    /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,15 +218,14 @@ main
 
 #location_dot
 {
-    font-size: 0.65rem;
+    font-size: 0.68rem;
     color: black;
 }
 
 #input_box
 {
-    height: 36px;
-    width: 170px;
-    /* background-color: white; */
+    height: 100% - 2px;
+    width: auto;
     border-top: 1px #F2F2F2 solid;
     border-bottom: 1px #F2F2F2 solid;
     display: flex;
@@ -231,7 +234,6 @@ main
 
 #input_box input
 {
-    /* padding-left: 8px; */
     font-family: 'Raleway', sans-serif;
     font-size: 0.67rem;
     font-weight: 600;
@@ -239,9 +241,9 @@ main
 
 #input_search
 {
-    padding-left: 10px;
+    padding-left: 15px;
     height: 100%;
-    width: 170px;
+    width: 100%;
     border: 0; /* border vire les borders du input */
     outline: none; /* outline vire le highlight bleu du input */
     display: flex;
@@ -257,7 +259,7 @@ main
 #bouton_search
 {
     height: 100%;
-    width: 100px;
+    width: 43%;
     background-color: #0065FC;
     display: flex;
     justify-content: center;
@@ -291,44 +293,47 @@ main
 }
 
 /* FILTER BAR */
-#filter_bar
+
+.filter_bar
 {
     /* background-color: orange; */
-    margin-top: 17px;
+    margin-left: 5px;
+    margin-top: 23px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-#filter_bar_title
+.filter_bar_title
 {
-    margin-left: 5px;
-    margin-right: 25px;
+    margin-left: 7px;
+    margin-right: 30px;
     display: flex;
     align-items: center;
 }
 
-#filter_bar a {
+.filter_bar a {
     float: left;
-    margin: 5px 16px 5px 0;
-    line-height: 34px;
+    margin: 5px 21px 5px 0;
+    line-height: 41px;
     background: white;
     color: black;
     text-decoration: none;
     font-weight: bold;
-    padding: 0 17px 0 44px;
+    padding: 0 17px 0 55px;
     position: relative;
-    border: 2px solid #F2F2F2;
+    /* border: 2px solid #F2F2F2; */
+    border: 2px solid lightgrey;
     border-radius: 40px;
   }
   
 .filter_icon{
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     background: #DEEBFF;
     position: absolute;
     left: -3px;
-    top: -2px;
+    top: -1.5px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -339,47 +344,47 @@ main
     font-size: 0.7rem;    
 }
 
-#filter_bar a:hover
+.filter_bar a:hover
 {
     background-color: #0065FC;
     color: white;
     border: 2px solid #0065FC;
 }
 
-#filter_bar a:hover .filter_icon
+.filter_bar a:hover .filter_icon
 {
     background-color: white;
     border: 2px solid #0065FC;
-    width: 34px;
-    height: 34px;
+    width: 41px;
+    height: 41px;
     top: -2px;
 }
 
-#information_message
+.information_message
 {
-    /* background-color: yellowgreen; */
-    margin-top: 9px;
-    height: 40px;
+    background-color: yellowgreen;
+    margin-left: 8px;
+    margin-top: 27px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-#information_message p
+.information_message p
 {
     margin-left: 10px;
 }
-#logo_information
+.logo_information
 {
-    height: 17px;
-    width: 17px;
+    height: 19px;
+    width: 19px;
     border: 1px #F2F2F2 solid;
-    border-radius: 17px;
+    border-radius: 19px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#logo_information i
+.logo_information i
 {
     font-size: 0.5rem;
 }
@@ -392,68 +397,65 @@ main
 /* *********************************        SECTION HEBERGEMENTS        **********************************/
 
 
-#section_hebergement
+.section_hebergement
 {
-    height: 465px;
-    width: 100%;
+    max-width: 1200px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: lightcoral;
     display: flex;
     justify-content: space-between;
-    /* background-color: bisque; */
 }
 
 
-#bloc_hebergement h1
+.bloc_hebergement h1
 {
-    margin-top: 2px;
-    margin-bottom: 18px;
+    margin-top: 37px;
+    margin-bottom: 2.8%;
+    margin-left: 4.5%;
 }
 
-#bloc_hebergement
+.bloc_hebergement
 {
-    /* margin-right: 15px; */
-    /* padding: 30px; */
-    padding: 32px;
-    width: 592px;
+    width: 65.7%;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
-#bloc_vignette_hebergement
+.bloc_vignette_hebergement
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
     flex-wrap: wrap;
 }
 
 .vignette
 {
     display: flex;
-    border: 3px solid white;
+    border: 4px solid white;
     border-radius: 20px;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
-    /* margin-bottom: 20px; */
-    margin-bottom: 23px;
+    margin-bottom: 27px;
     background-color: white;
-
 }
 
-#bloc_vignette_hebergement .vignette
+.bloc_vignette_hebergement .vignette
 {
-    width: 175px;
-    /* height: 150px; */
-    height: 140px;
-    /* background-color: white; */
-    /* margin-bottom: 20px; */
-    /* display: flex; */
+    height: 170px;
+    width: 27%;
     flex-direction: column;
-    /* border: 4px solid white;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1); */
+    margin-left: -9px;
+    margin-right: -9px;
 }
 
-#bloc_hebergement .vignette_photo
+.bloc_hebergement .vignette_photo
 {
-    width: 175px;
-    height: 90px;
+    width: 100%;
+    /* height: 90px; */
+    height: 60%;
     border-top-left-radius: 17px;
     border-top-right-radius: 17px;
     background-image: url('images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
@@ -462,8 +464,11 @@ main
 
 .vignette_text
 {
-    height: 50px;
-    margin: 5px 0 5px 7px;
+    /* background-color: beige; */
+    height: 38%;
+    /* margin: 5px 0 5px 7px; */
+    margin-top: 2px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -479,77 +484,80 @@ main
     font-weight: 600;
 }
 
-/* QUESTION: COMMENT ON FAIT LES ETOILES? */
-
 .stars
 {
-    margin: 0;
-    padding: 0;
-    font-size: 0.45rem;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.43rem;
+    /* background-color: coral; */
+}
+.stars i
+{
+    margin-right: 1px;
 }
 
-/* ----------------------------------------------------------------------------------------------------------------------- */
+
 
 #afficher_plus
 {
-    margin-top: 9px;
+    margin-top: 8px;
+    margin-left: 39px;
+    margin-bottom: 40px;
     background-color: red;
+    display: block;
+    height: 20px;
+    width: 100px;
 }
 
-#afficher_plus a
-{
-    width: 40px;
-}
-
-/* il y a un probleme ici? pourquoi le a fait tte la largeur ? */
 /* ----------------------------------------------------------------------------------------------------------------------- */
 
-
-#bloc_populaire
+.bloc_populaire
 {
-    padding: 30px;
-    width: 250px;
+    /* width: 26.25%; */
+    width: 31.35%;
     border-radius: 20px;
     background-color: #F2F2F2;
 }
 
-#populaire_title
+.populaire_title
 {
-    margin-top: 4px;
-    padding-bottom: 18px;
+    background-color: fuchsia;
+    margin-top: 38px;
+    margin-left: 9.3%;
+    margin-right: 9.3%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    font-size: 0.95rem;
 }
 
-#populaire_title
+.populaire_title i
 {
-    font-size: 0.95rem;
+    margin-top: 1px;
+    color: black;
+    font-size: 0.8rem;
 }
 
 /* ------ */
 
-.bloc_text
+
+.bloc_vignette_populaire
 {
+    margin-top: 22.2px;
+    background-color: lightgreen;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-
-#bloc_vignette_populaire
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-#bloc_populaire .vignette
+.bloc_populaire .vignette
 {
     /* background-color: white; */
-    width: 247px;
-    height: 101px;
+    width: 79.5%;
+    height: 122px;
+    margin-right: 3px;
+    margin-top: 1px;
     /* margin-bottom: 20px; */
     /* display: flex;
     border: 4px solid white;
@@ -558,47 +566,72 @@ main
 
 }
 
-
-
-#bloc_populaire .vignette_photo
+.bloc_populaire .vignette_photo
 {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 95px;
+    width: 38.3%;
     background-image: url('images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
     background-size: cover;
 }
 
-#bloc_populaire .stars
+.bloc_text
 {
-    margin: 5px 0 5px 14px;
+    margin-top: 13px;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#bloc_populaire .vignette_text
+.bloc_populaire .vignette_text p
+{
+    margin-top: 8px;
+}
+
+.bloc_populaire .stars
+{
+    margin: 5px 0 5px 18.5px;
+}
+
+.bloc_populaire .vignette_text
 {
     overflow-wrap: break-word;
-    margin: 5px 5px 5px 14px;
+    margin: 5px 5px 5px 18.5px;
 
 }
 
 /* *********************************        SECTION ACTIVITE        **********************************/
 
-#section_activities
+.section_activities
 {
-    margin-top: 20px;
-    padding-top: 25px;
-
-    height: 460px;
-    width: 100%;
+    max-width: 1200px;
+    margin-top: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 0;
     background-color: bisque;
 }
 
-#section_activities h1
+.section_activities h1
 {
     /* margin-bottom: 10px; */
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
+.bloc_activities
+{
+    background-color: pink;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 
 #vieux_port
 {
@@ -630,7 +663,7 @@ main
     height: 150px;
 }
 
-#section_activities .vignette
+.section_activities .vignette
 {
     width: 215px;
     border: none;
@@ -640,7 +673,7 @@ main
     padding-left: 0; */
 }
 
-#section_activities .vignette_text
+.section_activities .vignette_text
 {
     /* display: none; */
     height: 50px;
@@ -649,7 +682,7 @@ main
     padding: 0 0 0 15px;
 }
 
-#section_activities .vignette_photo
+.section_activities .vignette_photo
 {
     margin: 0;
     padding: 0;
@@ -662,16 +695,7 @@ main
     border-top-right-radius: 20px;
 }
 
-.bloc_activities
-{
-    background-color: pink;
-    width: 100%;
-    height: 380px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
+
 
 /* *********************************        FOOTER                      **********************************/
 
@@ -822,7 +846,7 @@ footer
 
     /* FIN DU HEADER (QU'IL FAUT REFAIRE??? C'EST TROP LONG???) */
 
-    #research_section
+    .research_section
     {
         /* margin-top: 75px; */
         height: 1000px;
@@ -834,18 +858,18 @@ footer
         /* align-items: center; */
     }
 
-    #search_banner
+    .search_banner
     {
         background-color: blue;
         height: 200px;
     }
 
-    #search_banner h1
+    .search_banner h1
     {
         padding-right: 10%;
     }
 
-    #search_banner_text p
+    .search_banner_text p
     {
         /* font-size: 23px; */
         margin-top: 18px;
@@ -853,7 +877,7 @@ footer
 
     
 
-    #search_bar
+    .search_bar
     {
         /* height:70px; */
         /* background-color: purple; */
@@ -912,7 +936,7 @@ footer
     }
 
 
-    #filter_bar
+    .filter_bar
     {
         margin: 0;
         padding: 0;
@@ -939,7 +963,7 @@ footer
 
     }
 
-    #information_message
+    .information_message
     {
         display: none;
     }
