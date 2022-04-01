@@ -936,17 +936,20 @@ footer
 
     .information_message
     {
-        margin-top: 23px;
+        margin-top: 22px;
         margin-left: 0;
         width: 100%;
         /* flex-wrap: wrap; */
-        align-items: center;
+        /* align-items: center; */
+        justify-content: flex-start;
+        align-items: baseline;
     }
 
     .information_message p
     {
-        margin: 0 0 0 9px;
+        margin: 0 0 0 13px;
         background-color: red;
+        width: 89%;
     }
 
     .logo_information 
@@ -954,8 +957,13 @@ footer
         height: 23px;
         width: 23px;
         border-radius: 23px;
-        /* margin-right: 10px; */
-        background-color: green;
+        position: relative;
+        top: -2px;
+    }
+
+    .logo_information i
+    {
+        font-size: 0.6rem;
     }
     /* *********************************        SECTION HEBERGEMENTS        **********************************/
 
