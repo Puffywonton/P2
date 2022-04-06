@@ -8,6 +8,9 @@
 
 /* Farandole de reglages */
 
+*{
+    box-sizing: border-box;
+}
 
 a:link { text-decoration: none; color: black; }
 a:visited { text-decoration: none; color: black; }
@@ -33,6 +36,7 @@ h3
     font-size: 0.61rem;
     font-weight: 600;
 }
+
 p
 {
     font-size: 0.6rem;
@@ -67,21 +71,25 @@ body
 
 header
 {
-    max-width: 1200px;
+    
+    /* padding: 0; */
+}
+
+header .wrapper
+{
+    max-width: 1240px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-    height: 95px;
-    padding: 0;
-    /* background-color: lightcoral; */
+    padding: 0 20px 0 20px;
     display: flex;
     justify-content: space-between;
+    height: 100px;
 }
 
 #booki_home /*logo booki*/
 {
-    /* background-color: greenyellow; */
     height: 40%;
     margin-top: 39px;
     margin-left: 5px;
@@ -103,7 +111,6 @@ header nav
     margin: 0;
     padding: 0;
     height: 100%;
-    /* background-color: red; */
     list-style-type: none;
     text-decoration: none;
     display: flex;
@@ -136,13 +143,20 @@ header nav
 /* *********************************        SECTION RECHERCHE        **********************************/
 
 .research_section
+{   
+    background-color: pink;
+}
+
+.research_section .wrapper
 {
-    max-width: 1200px;
+    max-width: 1240px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
-    /* background-color: pink; */
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 
 .search_banner
@@ -153,7 +167,7 @@ header nav
 
 .search_banner h1
 {
-    padding-top: 17px;
+    padding-top: 12px;
 }
 
 .search_banner p
@@ -163,17 +177,20 @@ header nav
 
 .search_bar
 {
-    background-color: transparent;
+    /* box-sizing: content-box; */
+    background-color: white;
     margin-left: 5px;
-    margin-top: 16px;
+    margin-top: 17px;
     width: 375px;
     height: 46px;
+    padding: 0;
     border-top: 1px #F2F2F2 solid;
     border-bottom: 1px #F2F2F2 solid;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+    
     
 }
 
@@ -185,8 +202,8 @@ header nav
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .icon_mylocation:hover
@@ -239,8 +256,8 @@ header nav
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .bouton_search:hover
@@ -271,10 +288,10 @@ header nav
 
 .filter_bar
 {
-    /* background-color: orange; */
+    background-color: orange;
     padding: 0;
     margin-left: 5px;
-    margin-top: 25px;
+    margin-top: 28px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -285,6 +302,8 @@ header nav
 {
     margin-left: 7px;
     margin-right: 30px;
+    font-size: 0.67rem;
+    font-weight: 600;
 }
 
 .filter_list
@@ -301,7 +320,7 @@ header nav
 .filter_list a 
 {
     float: left;
-    margin: 1px 22px 0px 0;
+    margin: 1px 20px 0px 0;
     line-height: 41px;
     background: white;
     color: black;
@@ -313,15 +332,22 @@ header nav
     border: 2px solid lightgrey;
     border-radius: 40px;
 }
+
+.filter_list_name
+{
+    font-size: 0.67rem;
+    font-weight: 600;
+}
+
   
 .filter_icon
 {
-    width: 41px;
-    height: 41px;
+    width: 44px;
+    height: 44px;
     background: #DEEBFF;
     position: absolute;
     left: -3px;
-    top: -2px;
+    top: -1.5px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -353,24 +379,28 @@ header nav
 {
     background-color: yellowgreen;
     margin-left: 8px;
-    margin-top: 27px;
+    margin-top: 30px;
     display: flex;
-    /* justify-content: flex-start; */
+    justify-content: flex-start;
     align-items: center;
 }
 .information_message p
 {
     margin-left: 10px;
+    flex-shrink: 1;
 }
 .logo_information
 {
-    height: 19px;
-    width: 19px;
+    height: 22px;
+    width: 22px;
     border: 1px lightgray solid;
     border-radius: 19px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: -1px;
+    
 }
 
 .logo_information i
@@ -383,23 +413,30 @@ header nav
 
 #section_hebergement
 {
-    max-width: 1200px;
+    background-color: lightcoral;
+}
+
+#section_hebergement .wrapper
+{
+    max-width: 1240px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-    padding: 0;
-    background-color: lightcoral;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 
-.bloc_hebergement h1
+.hebergement_title
 {
-    margin-top: 37px;
+    margin-top: 39px;
     margin-bottom: 2.8%;
     margin-left: 4.5%;
+    font-size: 0.832rem; 
+    font-weight: 600;
 }
 
 .bloc_hebergement
@@ -408,12 +445,18 @@ header nav
     background-color: #F2F2F2;
     border-radius: 20px;
 }
+
 .bloc_vignette_hebergement
 {
+    height: auto;
+    width: 100%;
+    background-color: red;
     display: flex;
     justify-content: space-evenly;
-
     flex-wrap: wrap;
+    padding-left: 7px;
+    padding-right: 7px;
+    flex-grow: 1;
 }
 
 .vignette
@@ -428,12 +471,12 @@ header nav
 
 .bloc_vignette_hebergement .vignette
 {
-    height: 170px;
-    width: 27%;
+    height: 177px;
+    width: 28.5%;
     flex-direction: column;
-    margin-left: -9px;
-    margin-right: -9px;
-    margin-bottom: 27px;
+    /* margin-left: -9px;
+    margin-right: -9px; */
+    margin-bottom: 28px;
 }
 
 .bloc_hebergement .vignette_photo
@@ -459,6 +502,14 @@ header nav
     justify-content: space-evenly;
 }
 
+.hebergement_name
+{
+    margin: 0;
+    padding: 0;
+    font-size: 0.61rem;
+    font-weight: 600;
+}
+
 .vignette_text p
 {
     font-size: 0.51rem;
@@ -474,6 +525,7 @@ header nav
     display: flex;
     justify-content: flex-start;
     font-size: 0.43rem;
+    margin-top: 2.7px;
     /* background-color: coral; */
 }
 .stars i
@@ -507,13 +559,18 @@ header nav
 .populaire_title
 {
     background-color: fuchsia;
-    margin-top: 38px;
+    margin-top: 39px;
     margin-left: 9.3%;
     margin-right: 9.3%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    font-size: 0.95rem;
+}
+
+.populaire_title div
+{
+    font-size: 0.832rem;
+    font-weight: 600;
 }
 
 .populaire_title i
@@ -528,7 +585,7 @@ header nav
 
 .bloc_vignette_populaire
 {
-    margin-top: 22.2px;
+    margin-top: 23px;
     background-color: lightgreen;
     display: flex;
     flex-direction: column;
@@ -539,11 +596,11 @@ header nav
 .bloc_populaire .vignette
 {
     /* background-color: white; */
-    width: 79.5%;
-    height: 122px;
-    margin-right: 3px;
-    margin-top: 1px;
-    margin-bottom: 27px;
+    width: 81.5%;
+    height: 130px;
+    margin-right: 2px;
+    /*margin-top: 1px;*/
+    margin-bottom: 29px;
     /* margin-bottom: 20px; */
     /* display: flex;
     border: 4px solid white;
@@ -570,6 +627,14 @@ header nav
     justify-content: space-between;
 }
 
+.populaire_name
+{
+    margin: 0;
+    padding: 0;
+    font-size: 0.61rem;
+    font-weight: 600;
+}
+
 .bloc_populaire .vignette_text p
 {
     margin-top: 8px;
@@ -591,13 +656,19 @@ header nav
 
 #section_activities
 {
-    max-width: 1200px;
+    background-color: bisque;
+}
+
+#section_activities .wrapper
+{
+    max-width: 1240px;
     margin-top: 54px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 55px;
     padding: 0;
-    background-color: bisque;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #section_activities h1
@@ -676,6 +747,8 @@ header nav
     width: 100%;
     margin: 0;
     padding: 0 0 0 15px;
+    font-size: 0.61rem;
+    font-weight: 600;
 }
 
 .double .vignette_text
@@ -706,32 +779,38 @@ footer
     padding: 0 0 33px 0;
     background-color: #F2F2F2;
 }
-#footer_box
+
+footer .wrapper
 {
-    background-color: lightseagreen;
-    max-width: 1200px;
+    max-width: 1240px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    /*justify-content: flex-start; */
-    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 38px;
+    /* background-color: lightseagreen; */
+    display: flex;
+    justify-content: space-between;
 }
-
 
 .footer
 {
     /* width: 220px; */
     width: 20%;
     margin-right: 12.25%;
-    background-color: lightslategray;
+    /* background-color: lightslategray; */
 }
 
-.footer h2
+.footer_title
 {
+    font-size: 0.67rem;
+    font-weight: 600;
     padding: 0px 0 19px 0;
 }
+
 .footer ul
 {
     margin: 0;
@@ -766,18 +845,20 @@ footer
         font-size: 1.009rem;
     }
     
-    header
+    header .wrapper
     {
         width: 100%;
         height: auto;
         margin: 0;
+        padding: 0;
         flex-direction: column;
         align-items: center;
+        
     }
     #booki_home
     {
         height: 50px;
-        margin-top: 21px;
+        margin-top: 22.5px;
         margin-left: 0px;
     }
 
@@ -785,6 +866,11 @@ footer
     {
         width: 100%;
         margin-top: 34px;
+    }
+
+    .nav_list
+    {
+        width: 100%;
     }
 
     .nav_list li
@@ -811,13 +897,17 @@ footer
 
     .research_section
     {
-        margin-top: 0;
         /* margin-left: 5.25%;
         margin-right: 5.25%; */
-        margin-left: 5.55%;
-        margin-right: 5.55%;
-        margin-bottom: 32px;
-        /* background-color: pink; */
+        
+    }
+
+    .research_section .wrapper
+    {
+        width: 100%;
+        margin-left: 1%;
+        margin-right: 1%;
+
     }
 
     .search_banner
@@ -828,7 +918,7 @@ footer
 
     .search_banner h1
     {
-        padding-top: 35px;
+        padding-top: 34px;
     }
     .search_banner p
     {
@@ -836,19 +926,21 @@ footer
     }
     .search_bar
     {
-        /* background-color: red; */
+        background-color: white;
         /* margin-left: 6px;
         margin-right: 6px; */
         margin-left: 0;
         margin-right: 0;
         margin-top: 38px;
-        width: 100%;
-        height: 55px;
-        border-radius: 19px;
+        width: 98%;
+        height: 57px;
+        border-radius: 18px;
     }
     .icon_mylocation
     {
         width: 15.5%;
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
     }
     .icon_mylocation i
     {
@@ -869,8 +961,10 @@ footer
     .bouton_search
     {
         width: 15.5%;
-        border-top-left-radius: 19px;
-        border-bottom-left-radius: 19px;
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
     }
     .bouton_search i
     {
@@ -896,10 +990,7 @@ footer
     .filter_bar_title
     {
         margin: 0 0 0 1px;
-    }
-    .filter_bar_title h2
-    {
-        font-size: 0.85rem; 
+        font-size: 0.85rem;
     }
 
     .filter_list
@@ -909,7 +1000,7 @@ footer
         justify-content: flex-start;
         /* POURQUOI QUAND JE FLEX CA FAIT BUGGER ICI???? */
     }
-    .filter_list a h2
+    .filter_list_name
     {
         font-size: 0.74rem;
     }
@@ -930,8 +1021,9 @@ footer
 
     .filter_icon
     {
-        width: 50px;
-        height: 50px;
+        width: 54px;
+        height: 54px;
+        top: -1.5px;
     }
 
     .information_message
@@ -947,18 +1039,20 @@ footer
 
     .information_message p
     {
-        margin: 0 0 0 13px;
+        margin: 0 0 0 12px;
+        /* margin: 0; */
+        
         background-color: red;
-        width: 89%;
+        text-overflow:ellipsis;
     }
 
     .logo_information 
     {
-        height: 23px;
-        width: 23px;
-        border-radius: 23px;
-        position: relative;
-        top: -2px;
+        height: 28px;
+        width: 28px;
+        border-radius: 28px;
+        /* position: relative;
+        top: -2px; */
     }
 
     .logo_information i
@@ -967,9 +1061,12 @@ footer
     }
     /* *********************************        SECTION HEBERGEMENTS        **********************************/
 
-    #section_hebergement
+
+    #section_hebergement .wrapper
     {
         width: 100%;
+        margin: 0;
+        padding: 0;
         flex-direction: column-reverse;
     }
 
@@ -1009,6 +1106,24 @@ footer
     .bloc_activities .vignette
     {
         width: 100%;
+    }
+
+    .double
+    {
+        width: 100%;
+    }
+    /* *********************************        FOOTER                      **********************************/
+
+    #footer_box
+    {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer
+    {
+        width: 80%;
     }
     
 }
