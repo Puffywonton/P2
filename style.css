@@ -67,22 +67,21 @@ body
     padding: 0;
 }
 
-/* *********************************        HEADER        **********************************/
-
-header
-{
-    
-    /* padding: 0; */
-}
-
-header .wrapper
+.wrapper
 {
     max-width: 1240px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-    padding: 0 20px 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* *********************************        HEADER        **********************************/
+
+header .wrapper
+{
     display: flex;
     justify-content: space-between;
     height: 100px;
@@ -149,14 +148,7 @@ header nav
 
 .research_section .wrapper
 {
-    max-width: 1240px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 32px;
-    padding-left: 20px;
-    padding-right: 20px;
-
 }
 
 .search_banner
@@ -408,6 +400,57 @@ header nav
     font-size: 0.5rem;
 }
 
+
+/* ********************* BLOC COMMON SETTINGS *********************** */
+
+.bloc_title
+{
+    margin: 0;
+    padding: 0;
+    font-size: 0.832rem; 
+    font-weight: 600;
+}
+
+.vignette
+{
+    display: flex;
+    border: 4px solid white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.vignette_title
+{
+    margin: 0;
+    padding: 0;
+    font-size: 0.61rem;
+    font-weight: 600;
+}
+
+.vignette_prix
+{
+    font-size: 0.51rem;
+}
+
+.vignette_prix b
+{
+    font-weight: 600;
+}
+
+.stars
+{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.43rem;
+    margin-top: 2.7px;
+    background-color: coral;
+}
+.stars i
+{
+    margin-right: 1px;
+}
+
 /* *********************************        SECTION HEBERGEMENTS        **********************************/
 
 
@@ -418,25 +461,8 @@ header nav
 
 #section_hebergement .wrapper
 {
-    max-width: 1240px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    padding-left: 20px;
-    padding-right: 20px;
     display: flex;
     justify-content: space-between;
-}
-
-
-.hebergement_title
-{
-    margin-top: 39px;
-    margin-bottom: 2.8%;
-    margin-left: 4.5%;
-    font-size: 0.832rem; 
-    font-weight: 600;
 }
 
 .bloc_hebergement
@@ -446,7 +472,14 @@ header nav
     border-radius: 20px;
 }
 
-.bloc_vignette_hebergement
+.bloc_hebergement .bloc_title
+{
+    margin-top: 39px;
+    margin-bottom: 2.8%;
+    margin-left: 4.5%;
+}
+
+.bloc_hebergement .bloc_vignettes
 {
     height: auto;
     width: 100%;
@@ -459,17 +492,7 @@ header nav
     flex-grow: 1;
 }
 
-.vignette
-{
-    display: flex;
-    border: 4px solid white;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
-    /* margin-bottom: 27px; */
-    background-color: white;
-}
-
-.bloc_vignette_hebergement .vignette
+.bloc_hebergement .vignette
 {
     height: 177px;
     width: 28.5%;
@@ -502,40 +525,7 @@ header nav
     justify-content: space-evenly;
 }
 
-.hebergement_name
-{
-    margin: 0;
-    padding: 0;
-    font-size: 0.61rem;
-    font-weight: 600;
-}
-
-.vignette_text p
-{
-    font-size: 0.51rem;
-}
-
-.vignette_text b
-{
-    font-weight: 600;
-}
-
-.stars
-{
-    display: flex;
-    justify-content: flex-start;
-    font-size: 0.43rem;
-    margin-top: 2.7px;
-    background-color: coral;
-}
-.stars i
-{
-    margin-right: 1px;
-}
-
-
-
-#afficher_plus
+.afficher_plus
 {
     margin-top: 8px;
     margin-left: 39px;
@@ -544,13 +534,14 @@ header nav
     display: block;
     height: 20px;
     width: 100px;
+    font-size: 0.67rem;
+    font-weight: 600;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------- */
 
 .bloc_populaire
 {
-    /* width: 26.25%; */
     width: 31.35%;
     border-radius: 20px;
     background-color: #F2F2F2;
@@ -568,12 +559,6 @@ header nav
     align-items: center;
 }
 
-.populaire_title div
-{
-    font-size: 0.832rem;
-    font-weight: 600;
-}
-
 .populaire_title i
 {
     margin-top: 1px;
@@ -583,10 +568,8 @@ header nav
     top: -1px;
 }
 
-/* ---hello world--- */
 
-
-.bloc_vignette_populaire
+.bloc_populaire .bloc_vignettes
 {
     margin-top: 23px;
     background-color: lightgreen;
@@ -623,15 +606,8 @@ header nav
     justify-content: space-between;
 }
 
-.populaire_name
-{
-    margin: 0;
-    padding: 0;
-    font-size: 0.61rem;
-    font-weight: 600;
-}
 
-.bloc_populaire .vignette_text p
+.bloc_populaire .vignette_prix
 {
     margin-top: 8px;
 }
@@ -657,20 +633,8 @@ header nav
 
 #section_activities .wrapper
 {
-    max-width: 1240px;
     margin-top: 54px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 55px;
-    padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#section_activities h1
-{
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 .bloc_activities
@@ -737,17 +701,16 @@ header nav
     height: 47%;
 }
 
-.bloc_activities .vignette_text
+.bloc_activities .vignette_title
 {
     height: 55px;
     width: 100%;
     margin: 0;
     padding: 0 0 0 15px;
-    font-size: 0.61rem;
-    font-weight: 600;
+    /* color: red; */
 }
 
-.double .vignette_text
+.bloc_activities .double .vignette_title
 {
     height: 67px;
 }
@@ -778,14 +741,6 @@ footer
 
 footer .wrapper
 {
-    max-width: 1240px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 38px;
     /* background-color: lightseagreen; */
     display: flex;
@@ -1081,9 +1036,6 @@ footer .wrapper
         border-radius: 0;
         padding-bottom: 27px;
     }
-
-
-
 
     .populaire_title
     {
