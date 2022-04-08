@@ -15,25 +15,12 @@
 a:link { text-decoration: none; color: black; }
 a:visited { text-decoration: none; color: black; }
 a:active { text-decoration: none; color: black; }
+
 h1
 {
     margin: 0;
     padding: 0;
     font-size: 0.832rem; 
-    font-weight: 600;
-}
-h2
-{
-    margin: 0;
-    padding: 0;
-    font-size: 0.67rem;
-    font-weight: 600;
-}
-h3
-{
-    margin: 0;
-    padding: 0;
-    font-size: 0.61rem;
     font-weight: 600;
 }
 
@@ -48,18 +35,6 @@ p
 {
     color: #0065FC;
 }
-
-
-
-/* BODY */
-
-/* body
-{
-    max-width: 992px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 body
 {
@@ -141,10 +116,10 @@ header nav
 
 /* *********************************        SECTION RECHERCHE        **********************************/
 
-.research_section
+/* .research_section
 {   
     background-color: pink;
-}
+} */
 
 .research_section .wrapper
 {
@@ -181,7 +156,7 @@ header nav
     border-radius: 10px;
     display: flex;
     align-items: center;
-    /* overflow: hidden; */
+    /* overflow: hidden; QUESTION Y A T-IL un autre truc pour cacher certains elements?*/
     
     
 }
@@ -280,7 +255,7 @@ header nav
 
 .filter_bar
 {
-    background-color: orange;
+    /* background-color: orange; */
     padding: 0;
     margin-left: 5px;
     margin-top: 28px;
@@ -303,9 +278,6 @@ header nav
     width: 100%;
     margin: 0;
     padding: 0;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: flex-start; */
     flex-wrap: wrap;
 }
 
@@ -369,7 +341,7 @@ header nav
 
 .information_message
 {
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     margin-left: 8px;
     margin-top: 30px;
     display: flex;
@@ -407,7 +379,7 @@ header nav
 {
     margin: 0;
     padding: 0;
-    font-size: 0.832rem; 
+    font-size: 0.825rem; 
     font-weight: 600;
 }
 
@@ -424,13 +396,13 @@ header nav
 {
     margin: 0;
     padding: 0;
-    font-size: 0.61rem;
+    font-size: 0.605rem;
     font-weight: 600;
 }
 
 .vignette_prix
 {
-    font-size: 0.51rem;
+    font-size: 0.53rem;
 }
 
 .vignette_prix b
@@ -444,7 +416,7 @@ header nav
     justify-content: flex-start;
     font-size: 0.43rem;
     margin-top: 2.7px;
-    background-color: coral;
+    /* background-color: coral; */
 }
 .stars i
 {
@@ -454,10 +426,10 @@ header nav
 /* *********************************        SECTION HEBERGEMENTS        **********************************/
 
 
-#section_hebergement
+/* #section_hebergement
 {
     background-color: lightcoral;
-}
+} */
 
 #section_hebergement .wrapper
 {
@@ -475,7 +447,7 @@ header nav
 .bloc_hebergement .bloc_title
 {
     margin-top: 39px;
-    margin-bottom: 2.8%;
+    margin-bottom: 21px;
     margin-left: 4.5%;
 }
 
@@ -483,7 +455,7 @@ header nav
 {
     height: auto;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -497,29 +469,67 @@ header nav
     height: 177px;
     width: 28.5%;
     flex-direction: column;
-    /* margin-left: -9px;
-    margin-right: -9px; */
     margin-bottom: 28px;
 }
 
 .bloc_hebergement .vignette_photo
 {
     width: 100%;
-    /* height: 90px; */
     height: 60%;
     border-top-left-radius: 17px;
     border-top-right-radius: 17px;
-    background-image: url('images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+    /* background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'); */
     background-size: cover;
 }
 
-.vignette_text
+#auberge_la_cannebiere .vignette_photo
 {
-    background-color: beige;
-    /* height: 38%; */
-    /* margin: 5px 0 5px 7px; */
-    margin-top: 2px;
-    margin-left: 10px;
+    background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+}
+
+#hotel_du_port .vignette_photo
+{
+    background-image: url('images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+}
+
+#hotel_les_mouettes .vignette_photo
+{
+    background-image: url('images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+}
+
+#hotel_de_la_mer .vignette_photo
+{
+    background-image: url('images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+}
+
+#auberge_le_panier .vignette_photo
+{
+    background-image: url('images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+}
+
+#hotel_chez_amina .vignette_photo
+{
+    background-image: url('images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+}
+
+.bloc_hebergement .vignette_box
+{
+    /* background-color: beige; */
+    height: 40%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bloc_hebergement .vignette_text
+{
+    /* background-color: lightgrey; */
+    padding: 0;
+    margin: 0;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -530,7 +540,7 @@ header nav
     margin-top: 8px;
     margin-left: 39px;
     margin-bottom: 40px;
-    background-color: red;
+    /* background-color: red; */
     display: block;
     height: 20px;
     width: 100px;
@@ -549,8 +559,8 @@ header nav
 
 .populaire_title
 {
-    background-color: fuchsia;
-    margin-top: 39px;
+    /* background-color: fuchsia; */
+    margin-top: 38px;
     margin-left: 9.1%;
     margin-right: 9.1%;
     display: flex;
@@ -571,20 +581,19 @@ header nav
 
 .bloc_populaire .bloc_vignettes
 {
-    margin-top: 23px;
-    background-color: lightgreen;
+    margin-top: 22px;
+    /* background-color: lightgreen; */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
 
 .bloc_populaire .vignette
 {
     /* background-color: white; */
-    width: 81.5%;
+    width: 82%;
     height: 130px;
-    margin-right: 2px;
+    margin-left: 2px;
     margin-bottom: 29px;
 }
 
@@ -592,44 +601,58 @@ header nav
 {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 38.3%;
-    background-image: url('images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+    width: 38%;
+    /* background-image: url('images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg'); */
     background-size: cover;
 }
 
-.bloc_text
+#hotel_le_soleil .vignette_photo
 {
-    margin-top: 13px;
-    margin-bottom: 4px;
+    background-image: url('images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+}
+
+#au_coeur_de_leau .vignette_photo
+{
+    background-image: url('images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
+}
+
+#hotel_tout_bleu .vignette_photo
+{
+    background-image: url('images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+}
+
+.bloc_populaire .vignette_box
+{
+    /* background-color: lightskyblue; */
+    width: 62%;
+    padding-top: 11px;
+    padding-bottom: 7px;
+    padding-left: 18px;
+    padding-right: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-wrap: break-word;
+}
+
+.bloc_populaire .vignette_text
+{
+    /* background-color: red; */
+    padding: 0;
+    margin: 0;
+    height: 54%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 
-.bloc_populaire .vignette_prix
-{
-    margin-top: 8px;
-}
-
-.bloc_populaire .stars
-{
-    margin: 5px 0 5px 18.5px;
-}
-
-.bloc_populaire .vignette_text
-{
-    overflow-wrap: break-word;
-    margin: 5px 5px 5px 18.5px;
-
-}
-
 /* *********************************        SECTION ACTIVITE        **********************************/
 
-#section_activities
+/* #section_activities
 {
     background-color: bisque;
-}
+} */
 
 #section_activities .wrapper
 {
@@ -639,33 +662,27 @@ header nav
 
 .bloc_activities
 {
-    background-color: pink;
-    margin-top: 20px;
+    /* background-color: pink; */
+    margin-top: 23px;
     width: 100%;
-    height: 398px;
+    height: 400px;
     display: flex;
-    /* flex-flow: column wrap; */
-    /* align-content: space-between; */
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 .bloc_activities .vignette
 {
     width: 22.5%;
     height: 100%;
-    margin-bottom: 0;
     border: none;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    /* margin-left: 0;
-    padding-left: 0; */
 }
 
 .double
 {
-    background-color: red;
+    /* background-color: red; */
     width: 22.5%;
     height: 100%;
     display: flex;
@@ -707,12 +724,13 @@ header nav
     width: 100%;
     margin: 0;
     padding: 0 0 0 15px;
-    /* color: red; */
+    display: flex;
+    align-items: center;
 }
 
 .bloc_activities .double .vignette_title
 {
-    height: 67px;
+    height: 67px; /* le height change pour les doubles */
 }
 
 .bloc_activities .vignette_photo
@@ -721,14 +739,41 @@ header nav
     padding: 0;
     height:100%;
     width: 100%;
-    background-color: #0065FC;
-    background-image: url('images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    /* background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg'); */
     background-size: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
+#vieux_port .vignette_photo
+{
+    background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+}
 
+#fort_de_pomegues .vignette_photo
+{
+    background-image: url('images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+}
+
+#iles_du_frioul .vignette_photo
+{
+    background-image: url('images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+}
+
+#parc_national .vignette_photo
+{
+    background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+}
+
+#notre_dame .vignette_photo
+{
+    background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+}
+
+#parc_longchamp .vignette_photo
+{
+    background-image: url('images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+}
 
 /* *********************************        FOOTER                      **********************************/
 
@@ -786,7 +831,6 @@ footer .wrapper
 
 @media screen and (max-width: 992px) /* maybe mobile */
 {
-    /* *********************************        HEADER        **********************************/
     p
     {
         font-size: 0.73rem;
@@ -796,16 +840,23 @@ footer .wrapper
         font-size: 1.009rem;
     }
     
-    header .wrapper
+    .wrapper
     {
         width: 100%;
-        height: auto;
         margin: 0;
         padding: 0;
+    }
+
+    /* *********************************        HEADER        **********************************/
+
+
+    header .wrapper
+    {
+        height: auto;
         flex-direction: column;
         align-items: center;
-        
     }
+
     #booki_home
     {
         height: 50px;
@@ -846,19 +897,9 @@ footer .wrapper
     
     /* *********************************        SECTION RECHERCHE        **********************************/
 
-    .research_section
-    {
-        /* margin-left: 5.25%;
-        margin-right: 5.25%; */
-        
-    }
-
     .research_section .wrapper
     {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        background-color: lightskyblue;
+        /* background-color: lightskyblue; */
         padding-left: 22.5px;
         padding-right: 22.5px;
         margin-bottom: 38px;
@@ -873,8 +914,8 @@ footer .wrapper
     .search_banner h1
     {
         padding-top: 34px;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .search_banner p
     {
@@ -938,7 +979,7 @@ footer .wrapper
     {
         margin: 36px 0 0 0;
         padding: 0;
-        background-color: lightsalmon;
+        /* background-color: lightsalmon; */
         flex-direction: column;
         align-items: flex-start;
     }
@@ -953,8 +994,8 @@ footer .wrapper
         margin-top: 14px;
         display: flex;
         justify-content: flex-start;
-        /* POURQUOI QUAND JE FLEX CA FAIT BUGGER ICI???? */
     }
+
     .filter_list_name
     {
         font-size: 0.74rem;
@@ -963,22 +1004,15 @@ footer .wrapper
     .filter_list a
     {
         /* margin: 0 12px 14px 0; */
-        margin: 0 9.25px 14px 0;
+        margin: 0 11px 14px 0;
         line-height: 51px;
-        padding: 0 20px 0 64px;
+        padding: 0 16px 0 62px;
     }
-
-    /* .filter_list a:nth-child(2)
-    {
-        margin: 0;
-        background-color: beige;
-    } */
 
     .filter_icon
     {
         width: 54px;
         height: 54px;
-        top: -1.5px;
     }
 
     .information_message
@@ -997,7 +1031,7 @@ footer .wrapper
         margin: 0 0 0 12px;
         /* margin: 0; */
         
-        background-color: red;
+        /* background-color: red; */
         text-overflow:ellipsis;
     }
 
@@ -1014,7 +1048,13 @@ footer .wrapper
     {
         font-size: 0.6rem;
     }
-    /* *********************************        SECTION HEBERGEMENTS        **********************************/
+    
+    /* ********************* BLOC COMMON SETTINGS *********************** */
+    
+    .bloc_title
+    {
+        font-size: 0.95rem;
+    }
 
 
     .vignette
@@ -1022,70 +1062,14 @@ footer .wrapper
         border: 5px solid white;
     }
 
-    #section_hebergement .wrapper
+    .vignette_title
     {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        flex-direction: column-reverse;
+        font-size: 0.7rem;
     }
 
-    .bloc_populaire
+    .vignette_prix
     {
-        width: 100%;
-        border-radius: 0;
-        padding-bottom: 27px;
-    }
-
-    .populaire_title
-    {
-        margin-top: 42px;
-        margin-left: 5.7%;
-        margin-right: 5.7%;
-    }
-
-    .populaire_title div
-    {
-        font-size: 1.01rem;
-    }
-
-    .populaire_title i
-    {
-        font-size: 0.95rem;
-    }
-
-    .bloc_vignette_populaire
-    {
-        margin-top: 26px;
-    }
-
-    .bloc_populaire .vignette
-    {
-        margin-right: 0;
-        margin-bottom: 10px;
-        height: 160px;
-        width: 89%;
-    }
-
-    .bloc_populaire .vignette_photo
-    {
-        width: 39%;
-    }
-
-    .bloc_text
-    {
-        margin-top: 9px;
-    }
-
-    .populaire_name
-    {
-        font-size: 0.74rem;
-    }
-
-    .vignette_text p
-    {
-        margin-top: 10px;
-        font-size: 0.65rem;
+        font-size: 0.65rem
     }
 
     .stars
@@ -1098,49 +1082,179 @@ footer .wrapper
         margin-right: 1.5px;
     }
 
+    
+
+    /* *********************************        SECTION HEBERGEMENTS        **********************************/
+
+
+    #section_hebergement .wrapper
+    {
+        flex-direction: column-reverse;
+    }
+    
+    .bloc_populaire
+    {
+        width: 100%;
+        border-radius: 0;
+        padding-bottom: 27px;
+    }
+
+    .populaire_title
+    {
+        margin-top: 42px;
+        margin-left: 5.7%;
+        margin-right: 5.2%;
+    }
+
+    .populaire_title i
+    {
+        font-size: 0.95rem;
+        position: relative;
+    }
+
+    .bloc_populaire .bloc_vignettes
+    {
+        margin-top: 29px;
+    }
+
+    .bloc_populaire .vignette
+    {
+        margin-right: 0;
+        margin-bottom: 10px;
+        height: 156px;
+        width: 89%;
+    }
+
+    .bloc_populaire .vignette_photo
+    {
+        width: 39%;
+    }
+
+    .bloc_populaire .vignette_box
+    {
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-bottom: 13px;
+        padding-top: 12px;
+    }
+
+    .bloc_populaire .vignette_text
+    {
+        height: 54%;
+    }
+
+    
+    /* ----------------------------------------------------------------------------------------------------------------------- */
 
     .bloc_hebergement
     {
         width: 100%;
+        border-radius: 0;
+        background-color: white;
     }
 
-    .bloc_vignette_hebergement
+    .bloc_hebergement .bloc_title
+    {
+        margin-bottom: 22px;
+        margin-left: 5.4%;
+    }
+
+    .bloc_hebergement .bloc_vignettes
     {
         flex-direction: column;
         align-items: center;
     }
 
-    .bloc_vignette_hebergement .vignette
+    .bloc_hebergement .vignette
     {
-        width: 87.5%;
+        height: 215px;
+        width: 92.5%;
+        margin-bottom: 12px;
     }
+
+    .bloc_hebergement .vignette_box
+    {
+        padding-top: 5px;
+        justify-content: flex-start;
+    }
+
+    .bloc_hebergement .vignette_text
+    {
+        height: 70%;
+        margin-bottom: 5px;
+    }
+
+    .afficher_plus
+    {
+        height: auto;
+        width: 120px;
+        margin-top: 20px;
+        margin-left: 23px;
+        margin-bottom: 3px;
+        font-size: 0.8rem;
+    }
+
     /* *********************************        SECTION ACTIVITE        **********************************/
 
-    #section_activities
+
+    #section_activities .bloc_title
     {
-        width: 100%;
+        margin-left: 5.7%;
     }
 
     #section_activities .wrapper
     {
-        width: 100%
+        margin-bottom: 0;
     }
 
     .bloc_activities
     {
         flex-direction: column;
+        align-items: center;
         height: auto;
+        margin-top: 30px;
     }
 
     .bloc_activities .vignette
     {
-        width: 100%;
+        width: 89%;
+        height: 205px;
     }
 
     .double
     {
         width: 100%;
+        height: 482px;
+        justify-content: space-evenly;
+        align-items: center;
     }
+
+    .double .vignette:first-child
+    {
+        height: 205px;
+    }
+
+    .double .vignette:last-child
+    {
+        height: 205px;
+    }
+
+    .bloc_activities .double:last-child .vignette:first-child /* la derniere colonne n'a pas la meme dimension */
+    {
+        height: 205px;
+    }   
+    .bloc_activities .double:last-child .vignette:last-child
+    {
+        height: 205px;
+    }
+
+    .bloc_activities .vignette_title
+    {
+        height: 80px;
+        padding: 0 0 0 22px;
+    }
+
+
     /* *********************************        FOOTER                      **********************************/
 
     .footer
