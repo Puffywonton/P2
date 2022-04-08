@@ -485,31 +485,38 @@ header nav
 #auberge_la_cannebiere .vignette_photo
 {
     background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+    background-position: center;
 }
 
 #hotel_du_port .vignette_photo
 {
     background-image: url('images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+    background-position: center;
+    
 }
 
 #hotel_les_mouettes .vignette_photo
 {
     background-image: url('images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+    background-position: center;
 }
 
 #hotel_de_la_mer .vignette_photo
 {
     background-image: url('images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+    background-position: center;
 }
 
 #auberge_le_panier .vignette_photo
 {
     background-image: url('images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+    background-position: bottom;
 }
 
 #hotel_chez_amina .vignette_photo
 {
     background-image: url('images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+    background-position: left center;
 }
 
 .bloc_hebergement .vignette_box
@@ -609,16 +616,19 @@ header nav
 #hotel_le_soleil .vignette_photo
 {
     background-image: url('images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+    background-position: bottom;
 }
 
 #au_coeur_de_leau .vignette_photo
 {
     background-image: url('images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
+    background-position: bottom;
 }
 
 #hotel_tout_bleu .vignette_photo
 {
     background-image: url('images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+    background-position: left;
 }
 
 .bloc_populaire .vignette_box
@@ -748,26 +758,30 @@ header nav
 #vieux_port .vignette_photo
 {
     background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    background-position: bottom;
 }
 
 #fort_de_pomegues .vignette_photo
 {
     background-image: url('images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+    background-position: right;
 }
 
 #iles_du_frioul .vignette_photo
 {
     background-image: url('images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+    background-position: 50% 20%;
 }
 
 #parc_national .vignette_photo
 {
     background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+    background-position: bottom;
 }
 
 #notre_dame .vignette_photo
 {
-    background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+    background-image: url('images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
 }
 
 #parc_longchamp .vignette_photo
@@ -885,7 +899,7 @@ footer .wrapper
         width: 100%;
         padding: 0 0 15px 0;
         border-top: none;
-        border-bottom: 3px transparent solid;
+        border-bottom: 3px #F2F2F2 solid;
         justify-content: center;
     }
 
@@ -1013,6 +1027,11 @@ footer .wrapper
     {
         width: 54px;
         height: 54px;
+    }
+
+    .filter_icon i
+    {
+        font-size: 0.8rem;
     }
 
     .information_message
@@ -1254,6 +1273,37 @@ footer .wrapper
         padding: 0 0 0 22px;
     }
 
+    .bloc_activities .double .vignette_title
+    {
+        height: 80px;
+        padding: 0 0 0 22px;
+    }
+
+    #vieux_port .vignette_photo
+    {
+        background-position: top;
+    }
+
+    #fort_de_pomegues .vignette_photo
+    {
+        background-position: 70% 42%;
+    }
+
+    #iles_du_frioul .vignette_photo
+    {
+        background-position: 50% 15%;
+    }
+    
+    #parc_national .vignette_photo
+    {
+        background-position: center;
+    }
+    
+    #parc_longchamp .vignette_photo
+    {
+        background-position: 50% 25%;
+    }
+
 
     /* *********************************        FOOTER                      **********************************/
 
@@ -1271,8 +1321,8 @@ footer .wrapper
         flex-direction: column;
         justify-content: flex-start;
         width: 100%;
-        margin-left: 3%;
-        margin-right: 3%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
     }
 
 
