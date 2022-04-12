@@ -12,28 +12,15 @@
     box-sizing: border-box;
 }
 
-a:link { text-decoration: none; color: black; }
-a:visited { text-decoration: none; color: black; }
-a:active { text-decoration: none; color: black; }
-
-h1
-{
-    margin: 0;
-    padding: 0;
-    font-size: 0.832rem; 
-    font-weight: 600;
-}
+a:link { text-decoration: none; color: inherit; }
+a:visited { text-decoration: none; color: inherit; }
+a:active { text-decoration: none; color: inherit; }
 
 p
 {
     font-size: 0.6rem;
     margin: 0;
     padding: 0;
-}
-
-.fa-solid
-{
-    color: #0065FC;
 }
 
 body
@@ -97,6 +84,7 @@ header nav
     height: 100%;
 }
 
+
 .nav_list a
 {
     height: 100%;
@@ -132,9 +120,12 @@ header nav
     margin-left: 5px;
 }
 
+
 .search_banner h1
 {
     padding-top: 12px;
+    font-size: 0.832rem; 
+    font-weight: 600;
 }
 
 .search_banner p
@@ -225,15 +216,27 @@ header nav
     align-items: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    color: white;
+}
+
+.bouton_search:link
+{
+    color: white;
+}
+
+.bouton_search:active
+{
+    color: white;
+}
+
+.bouton_search:visited
+{
+    color: white;
 }
 
 .bouton_search:hover
 {
     background-color: #DEEBFF;
-}
-
-.bouton_search:hover p
-{
     color: #0065FC;
 }
 
@@ -243,7 +246,6 @@ header nav
     margin: 0;
     font-size: 0.67rem;
     font-weight: 600;
-    color: white;
 }
 
 .bouton_search i
@@ -306,6 +308,7 @@ header nav
   
 .filter_icon
 {
+    color: #0065FC;
     width: 44px;
     height: 44px;
     background: #DEEBFF;
@@ -352,6 +355,7 @@ header nav
 {
     margin-left: 10px;
     flex-shrink: 1;
+    width: 100%;
 }
 .logo_information
 {
@@ -362,14 +366,16 @@ header nav
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: -1px;
+    /* position: relative; */
+    /* top: -1px; */
+    flex-grow: 1;
     
 }
 
 .logo_information i
 {
     font-size: 0.5rem;
+    color: #0065FC;
 }
 
 
@@ -390,6 +396,18 @@ header nav
     border-radius: 20px;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
     background-color: white;
+}
+
+.vignette_photo
+{
+    overflow: hidden;
+}
+
+.vignette_photo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .vignette_title
@@ -421,6 +439,7 @@ header nav
 .stars i
 {
     margin-right: 1px;
+    color: #0065FC;
 }
 
 /* *********************************        SECTION HEBERGEMENTS        **********************************/
@@ -479,49 +498,11 @@ header nav
     border-top-left-radius: 17px;
     border-top-right-radius: 17px;
     /* background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'); */
-    background-size: cover;
-}
-
-#auberge_la_cannebiere .vignette_photo
-{
-    background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
-    background-position: center;
-}
-
-#hotel_du_port .vignette_photo
-{
-    background-image: url('images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
-    background-position: center;
-    
-}
-
-#hotel_les_mouettes .vignette_photo
-{
-    background-image: url('images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
-    background-position: center;
-}
-
-#hotel_de_la_mer .vignette_photo
-{
-    background-image: url('images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
-    background-position: center;
-}
-
-#auberge_le_panier .vignette_photo
-{
-    background-image: url('images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
-    background-position: bottom;
-}
-
-#hotel_chez_amina .vignette_photo
-{
-    background-image: url('images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
-    background-position: left center;
+    /* background-size: cover; */
 }
 
 .bloc_hebergement .vignette_box
 {
-    /* background-color: beige; */
     height: 40%;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -533,7 +514,6 @@ header nav
 
 .bloc_hebergement .vignette_text
 {
-    /* background-color: lightgrey; */
     padding: 0;
     margin: 0;
     height: 100%;
@@ -547,7 +527,6 @@ header nav
     margin-top: 8px;
     margin-left: 39px;
     margin-bottom: 40px;
-    /* background-color: red; */
     display: block;
     height: 20px;
     width: 100px;
@@ -566,13 +545,11 @@ header nav
 
 .populaire_title
 {
-    /* background-color: fuchsia; */
     margin-top: 38px;
     margin-left: 9.1%;
     margin-right: 9.1%;
     display: flex;
     justify-content: space-between;
-    /* align-items: flex-start; */
     align-items: center;
 }
 
@@ -581,15 +558,12 @@ header nav
     margin-top: 1px;
     color: black;
     font-size: 0.8rem;
-    position: relative;
-    top: -1px;
 }
 
 
 .bloc_populaire .bloc_vignettes
 {
     margin-top: 22px;
-    /* background-color: lightgreen; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -597,7 +571,6 @@ header nav
 
 .bloc_populaire .vignette
 {
-    /* background-color: white; */
     width: 82%;
     height: 130px;
     margin-left: 2px;
@@ -609,26 +582,7 @@ header nav
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     width: 38%;
-    /* background-image: url('images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg'); */
     background-size: cover;
-}
-
-#hotel_le_soleil .vignette_photo
-{
-    background-image: url('images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
-    background-position: bottom;
-}
-
-#au_coeur_de_leau .vignette_photo
-{
-    background-image: url('images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
-    background-position: bottom;
-}
-
-#hotel_tout_bleu .vignette_photo
-{
-    background-image: url('images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
-    background-position: left;
 }
 
 .bloc_populaire .vignette_box
@@ -755,40 +709,6 @@ header nav
     border-top-right-radius: 20px;
 }
 
-#vieux_port .vignette_photo
-{
-    background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
-    background-position: bottom;
-}
-
-#fort_de_pomegues .vignette_photo
-{
-    background-image: url('images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
-    background-position: right;
-}
-
-#iles_du_frioul .vignette_photo
-{
-    background-image: url('images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
-    background-position: 50% 20%;
-}
-
-#parc_national .vignette_photo
-{
-    background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
-    background-position: bottom;
-}
-
-#notre_dame .vignette_photo
-{
-    background-image: url('images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
-}
-
-#parc_longchamp .vignette_photo
-{
-    background-image: url('images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
-}
-
 /* *********************************        FOOTER                      **********************************/
 
 footer
@@ -838,12 +758,7 @@ footer .wrapper
 
 /* *********************************        FORMAT TABLETTE + MOBILE        **********************************/
 
-/* @media screen and (min-width: 768px) and (max-width: 992px)
-{
-
-} */
-
-@media screen and (max-width: 992px) /* maybe mobile */
+@media screen and (max-width: 992px)
 {
     p
     {
@@ -908,7 +823,7 @@ footer .wrapper
         border-top: none;
         border-bottom: 3px #0065FC solid;
     }
-    
+
     /* *********************************        SECTION RECHERCHE        **********************************/
 
     .research_section .wrapper
@@ -979,7 +894,7 @@ footer .wrapper
     .bouton_search i
     {
         display: block;
-        color: white;
+        /* color: white; */
         font-size: 0.82rem;
     }
     .bouton_search p
@@ -1067,7 +982,7 @@ footer .wrapper
     {
         font-size: 0.6rem;
     }
-    
+
     /* ********************* BLOC COMMON SETTINGS *********************** */
     
     .bloc_title
@@ -1101,10 +1016,7 @@ footer .wrapper
         margin-right: 1.5px;
     }
 
-    
-
     /* *********************************        SECTION HEBERGEMENTS        **********************************/
-
 
     #section_hebergement .wrapper
     {
@@ -1180,15 +1092,16 @@ footer .wrapper
 
     .bloc_hebergement .bloc_vignettes
     {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        /* align-items: center; */
+        flex-wrap: wrap;
     }
 
     .bloc_hebergement .vignette
     {
         height: 215px;
-        width: 92.5%;
-        margin-bottom: 12px;
+        width: 43%;
+        margin-bottom: 35px;
     }
 
     .bloc_hebergement .vignette_box
@@ -1213,8 +1126,7 @@ footer .wrapper
         font-size: 0.8rem;
     }
 
-    /* *********************************        SECTION ACTIVITE        **********************************/
-
+    /*SECTION ACTIVITE */
 
     #section_activities .bloc_title
     {
@@ -1228,21 +1140,22 @@ footer .wrapper
 
     .bloc_activities
     {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* align-items: center; */
         height: auto;
         margin-top: 30px;
     }
 
     .bloc_activities .vignette
     {
-        width: 89%;
+        width: 43%;
         height: 205px;
     }
 
     .double
     {
-        width: 100%;
+        width: 43%;
         height: 482px;
         justify-content: space-evenly;
         align-items: center;
@@ -1279,31 +1192,50 @@ footer .wrapper
         padding: 0 0 0 22px;
     }
 
-    #vieux_port .vignette_photo
+}
+
+
+@media screen and (max-width: 768px)
+{
+
+    /* SECTION HEBERGEMENT */
+
+    .bloc_hebergement .bloc_vignettes
     {
-        background-position: top;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
     }
 
-    #fort_de_pomegues .vignette_photo
+    .bloc_hebergement .vignette
     {
-        background-position: 70% 42%;
+        height: 215px;
+        width: 92.5%;
+        margin-bottom: 12px;
     }
 
-    #iles_du_frioul .vignette_photo
+    /* *********************************        SECTION ACTIVITE        **********************************/
+
+    .bloc_activities
     {
-        background-position: 50% 15%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .bloc_activities .vignette
+    {
+        width: 89%;
+    }
+
+    .double
+    {
+        width: 100%;
+        height: 482px;
+        justify-content: space-evenly;
+        align-items: center;
     }
     
-    #parc_national .vignette_photo
-    {
-        background-position: center;
-    }
-    
-    #parc_longchamp .vignette_photo
-    {
-        background-position: 50% 25%;
-    }
-
 
     /* *********************************        FOOTER                      **********************************/
 
@@ -1321,8 +1253,8 @@ footer .wrapper
         flex-direction: column;
         justify-content: flex-start;
         width: 100%;
-        margin-left: 7.5%;
-        margin-right: 7.5%;
+        padding-left: 7.5%;
+        padding-right: 7.5%;
     }
 
 
