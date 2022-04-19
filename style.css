@@ -406,9 +406,32 @@ header nav
     font-size: 0.53rem;
 }
 
-.vignette_prix b
+.bold
 {
     font-weight: 600;
+}
+
+.stars.stars1 i:nth-child(1),
+
+.stars.stars2 i:nth-child(1),
+.stars.stars2 i:nth-child(2),
+
+.stars.stars3 i:nth-child(1),
+.stars.stars3 i:nth-child(2),
+.stars.stars3 i:nth-child(3),
+
+.stars.stars4 i:nth-child(1),
+.stars.stars4 i:nth-child(2),
+.stars.stars4 i:nth-child(3),
+.stars.stars4 i:nth-child(4),
+
+.stars.stars5 i:nth-child(1),
+.stars.stars5 i:nth-child(2),
+.stars.stars5 i:nth-child(3),
+.stars.stars5 i:nth-child(4),
+.stars.stars5 i:nth-child(5)
+{
+    color: #0065FC;   
 }
 
 .stars
@@ -421,8 +444,9 @@ header nav
 .stars i
 {
     margin-right: 1px;
-    color: #0065FC;
+    color: #f2f2f2;
 }
+
 
 /* *********************************        SECTION HEBERGEMENTS        **********************************/
 
